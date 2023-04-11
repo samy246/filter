@@ -1,0 +1,28 @@
+$seafoam: #37bfa7;
+.orderdropdown {
+  ul {
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 1px 4px #7f7f7f1c;
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px;
+      font-size: 10px;
+      cursor: pointer;
+      color: #858585;
+
+      &:hover {
+        color: $seafoam;
+      }
+
+      span.orderdropdown__data {
+        padding: 0 5px;
+      }
+    }
+  }
+}

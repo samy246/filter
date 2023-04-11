@@ -1,0 +1,240 @@
+.react-responsive-modal-closeButton {
+  color: #000;
+  display: none;
+}
+.paymentModal {
+  width: 312px;
+  text-align: center;
+  h4 {
+    margin: 20px 0px;
+  }
+  .conform__text {
+    font-weight: 400;
+    margin: 0px 0px 30px 0px;
+  }
+}
+.InputMask {
+  background: #000;
+}
+.react-responsive-modal-modal {
+  // svg {
+  //   background-color: #b72413;
+  //   color: white;
+  //   border-radius: 100%;
+  //   padding: 20px;
+  // }
+
+  .newcardform__modalremove {
+    background-color: #b72413;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5em 3em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .newcardform__modalcancel {
+    background-color: white;
+    border: 1px solid #b72413;
+    color: #2b2b2b;
+    padding: 0.5em 3em;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+.newcardform__creditCardDetails > h6 {
+  border-bottom: 2px solid white;
+  line-height: 3;
+}
+
+.newcardform__creditCardDetails {
+  label {
+    margin-bottom: 1em;
+    input {
+      margin-right: 5px;
+    }
+  }
+  .newcardform__creditcardInput p > h6 {
+    color: #858585;
+  }
+
+  .newcardform__cardtypes {
+    display: flex;
+    align-items: center;
+    margin: 0.5em 0;
+    img {
+      width: 2.5em;
+      height: 1.1em;
+      object-fit: contain;
+    }
+  }
+
+  .newcardform__creditcardInput {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+
+    p {
+      .newcardform__cardnumber {
+        position: relative;
+
+        img {
+          position: absolute;
+          height: 1.5em;
+          right: 10em;
+          top: 8px;
+        }
+      }
+    }
+    input {
+      padding-left: 10px;
+    }
+    select,
+    input {
+      outline: none;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      height: 2.5em;
+    }
+    input:focus {
+      border: 1px solid lightgray;
+      outline: none !important;
+    }
+
+    .newcardform__expiry {
+      display: flex;
+      align-items: center;
+      p {
+        display: grid;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 11em;
+        height: 150px;
+      }
+      select,
+      input {
+        width: 5.25em;
+      }
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      p.newcardform__csv {
+        margin-left: 1em;
+
+        .newcardform__csvnumber {
+          position: relative;
+          svg {
+            position: absolute;
+            height: 2em;
+            right: 6em;
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .newcardform__transactionDetails {
+    h6 {
+      font-size: 14px;
+    }
+    p.newcardform__delete {
+      width: max-content;
+      color: #2b2b2b;
+      text-decoration: underline;
+      margin: 1em 0 1em auto;
+      border-radius: 20px;
+      font-weight: 500;
+      cursor: pointer;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+
+    p.newcardform__description {
+      width: 80%;
+      color: #707070;
+      font-size: 12px;
+    }
+
+    strong {
+      color: #3ab67d;
+      text-decoration: underline;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .newcardform
+    .newcardform__creditCardDetails
+    .newcardform__creditcardInput
+    p
+    .newcardform__cardnumber
+    img {
+    right: 6em;
+  }
+}
+
+@media (max-width: 1024px) {
+  .newcardform .newcardform__creditCardDetails .newcardform__creditcardInput {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 468px) {
+  .newcardform__expiry {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p {
+      display: grid;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      width: 13em;
+      gap: 10px;
+    }
+    select,
+    input {
+      width: 6em !important;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    p.newcardform__csv {
+      margin-left: 1em;
+
+      .newcardform__csvnumber {
+        position: relative;
+        svg {
+          position: absolute;
+          height: 2em;
+          right: 6em;
+          top: 4px;
+        }
+      }
+    }
+  }
+}

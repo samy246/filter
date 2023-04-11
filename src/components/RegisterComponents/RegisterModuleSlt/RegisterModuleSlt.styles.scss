@@ -1,0 +1,65 @@
+.registerModuleSlt {
+  background-color: white;
+  .register_module_sl_business_home_img,
+  .register_module_sl_business_business_img {
+    cursor: pointer;
+  }
+
+  .registerModuleSlt_heading {
+    color: #858585;
+    padding: 60px 0px;
+    text-align: center;
+  }
+  .register_module_sl_business_p,
+  .register_module_sl_home_p {
+    color: #adb5bd;
+    font-weight: bolder;
+  }
+
+  .padding {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .registerModuleSlt {
+
+    .padding {
+      padding: 0px 40px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .registerModuleSlt {
+    .register_module_sl_business_home_img,
+    .register_module_sl_business_business_img {
+      width: 150px;
+    }
+
+    .registerModuleSlt_heading {
+      padding-top: 90px;
+      text-align: center;
+    }
+    .register_module_sl_business_p,
+    .register_module_sl_home_p {
+      color: #adb5bd;
+      font-weight: bolder;
+    }
+
+    .padding {
+      padding: 0px 50px;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .registerModuleSlt {
+    .register_module_sl_business_home_img,
+    .register_module_sl_business_business_img {
+      width: 120px;
+    }
+
+    .padding {
+      padding: 0px 30px;
+    }
+  }
+}

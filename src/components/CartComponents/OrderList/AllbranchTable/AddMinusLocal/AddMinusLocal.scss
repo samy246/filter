@@ -1,0 +1,42 @@
+$seafoam: #37bfa7;
+.addminuslocal {
+  .addminuslocal__quantity {
+    display: flex;
+    border: 1px solid #f2dcdc;
+    border-radius: 20px;
+    width: max-content;
+    margin: 0 auto;
+    height: 1.75em;
+
+    .addminuslocal__input {
+      background-color: unset;
+    }
+    .addminuslocal__subtract {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #858585;
+      border-radius: 20px;
+      padding: 2px 12px;
+      color: #858585;
+    }
+    .addminuslocal__add {
+      border: 1px solid var(---3ab67d);
+      background: $seafoam 0% 0% no-repeat padding-box;
+      border: 1px solid $seafoam;
+      border-radius: 20px;
+      padding: 2px 12px;
+      color: white;
+    }
+  }
+  input {
+    border: 0;
+    width: 3em;
+    text-align: center;
+    background-color: inherit;
+  }
+}
+
+.addminuslocal__spinner {
+  .spinner-grow {
+    color: $seafoam;
+  }
+}

@@ -1,0 +1,53 @@
+@mixin house {
+  border: 1px solid #dcdbdb;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.Login_Flow_Login_1 {
+  .Login_Flow_Login_1_houses {
+    width: 528px;
+    .Login_Flow_Login_1_organic_form {
+      @include house;
+      span {
+        padding-left: 20px;
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+    .Login_Flow_Login_1_steak_house {
+      @include house;
+
+      span {
+        padding-left: 20px;
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+    .Login_Flow_Login_1_burger_house {
+      @include house;
+
+      span {
+        padding-left: 20px;
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+  }
+  .Login_Flow_Login_1_btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #dcdbdb;
+    background: white;
+    border-radius: 24px;
+    border: 1px solid #dcdbdb;
+    padding: 6px 50px;
+    i {
+      padding-left: 5px;
+    }
+  }
+}

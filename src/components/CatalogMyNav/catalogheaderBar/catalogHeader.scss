@@ -1,0 +1,244 @@
+$seafoam: #37bfa7;
+.borders_li {
+  border-right: 1px solid gray;
+}
+
+.catalog_header {
+  text-align: center;
+  box-shadow: #2b2b2b1a 0px 5px 10px;
+  .catalog_header_heading {
+    padding-bottom: 4px;
+  }
+  .catalog_header__menu {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 110px;
+    height: 100%;
+    border-radius: 10px;
+
+    .catalog_header__menu__conatiner {
+      .carousel__menu {
+        max-width: 100%;
+        margin: auto;
+        .react-multi-carousel-track {
+          .react-multi-carousel-item {
+            display: block;
+            position: relative;
+            text-shadow: none;
+            height: 110px;
+
+            .catalogs__categoryList {
+              .catalogs__categoryList__div {
+                width: 100%;
+                margin: auto;
+                a {
+                  padding: 10px;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .active {
+      background: #f5f5f5;
+      .catalogs__categoryList__div {
+        border-bottom: 2px solid $seafoam;
+        a {
+          span {
+            font-weight: 500;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.catalogs__categoryList__div a span {
+  font-size: 14px;
+  text-align: center;
+  opacity: 1;
+  color: gray;
+  font-weight: 400;
+  min-height: 49px;
+  height: 100%;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+
+.catalog_container {
+  background: #ffff;
+  position: relative;
+  min-height: 60vh;
+
+  .accordion {
+    display: flex;
+    .accordion-item {
+      width: calc(100% / 3);
+      border: none;
+      position: relative;
+
+      .accordion-collapse {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 52px;
+        z-index: 99;
+        box-shadow: 6px 8px 6px #2754aa29;
+        background-color: white;
+        border-radius: 10px;
+      }
+    }
+  }
+  
+}
+
+.catalogheader__productCard {
+  margin: 4px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: white;
+  // padding: 1em 1em 3em 1em;
+  padding-top: 1em;
+}
+
+.incrementoptions__spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  .spinner-border {
+    width: 6em;
+    height: 6em;
+    color: $seafoam;
+  }
+}
+
+.alsolike__productCard {
+  margin-top: 1em;
+}
+.container_pagination {
+  text-align: center;
+}
+.pagination {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+
+  li.disabled {
+    display: none;
+  }
+
+  li {
+    margin: 0px 6px 50px 5px;
+
+    i {
+      color: $seafoam;
+    }
+    .arrow_pad {
+      border-radius: 20px;
+    }
+    p.active {
+      background: $seafoam 0% 0% no-repeat padding-box;
+      color: #ffff;
+    }
+
+    p,
+    a {
+      cursor: pointer;
+      box-shadow: 0px 3px 6px #2754aa26;
+      margin: 0px;
+      padding: 9px 15px;
+      background: #ffff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: $seafoam !important;
+      font-weight: 600;
+    }
+  }
+
+  .active_page {
+    color: white !important;
+    a {
+      background: $seafoam !important;
+      color: white !important;
+    }
+  }
+}
+
+.catalog_container > .catalogheader__productCard > .productCard {
+  width: calc(100% / 5 - -20px);
+}
+.catalog_container {
+  .container_pagination {
+    left: 17%;
+    bottom: -39px;
+  }
+}
+.catalog_header {
+  h5 {
+    color: gray;
+    margin-bottom: 1.5em;
+    text-align: left;
+
+    span {
+      color: $seafoam;
+      text-align: center;
+    }
+  }
+  .catalog_header__menu {
+    .catalog_header__menu__conatiner {
+      // width: 96%;
+      // margin: auto;
+      .carousel__menu {
+        max-width: 100%;
+        margin: auto;
+        .react-multiple-carousel__arrow--right {
+          right: calc(-2% + 1px);
+        }
+        .react-multiple-carousel__arrow--left {
+          left: calc(-2% + 1px);
+        }
+
+        .react-multi-carousel-track {
+          .react-multi-carousel-item {
+            display: block;
+            position: relative;
+
+            &::selection {
+              text-shadow: none;
+            }
+
+            .catalogs__categoryList {
+              // width: 107px;
+              .catalogs__categoryList__div {
+                width: 100%;
+                margin: auto;
+                a {
+                  padding: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 840px) {
+  .pagination {
+    margin-top: 4em;
+  }
+
+  .catalogheader__productCard {
+    justify-content: center !important;
+  }
+}

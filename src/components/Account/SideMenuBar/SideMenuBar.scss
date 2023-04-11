@@ -1,0 +1,208 @@
+$seafoam: #37bfa7;
+.sidemenubar {
+  background-color: white;
+  max-width: 372px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-bottom: 10px;
+  .active {
+    .active__div {
+      background-color: #f3f3f3;
+      color: $seafoam;
+      font-weight: 600;
+    }
+  }
+  .sidemenubar__heading {
+    margin: 0px;
+  }
+  ul {
+    list-style: none;
+    padding: 2px;
+    margin: 0px;
+
+    a {
+      text-decoration: none;
+      color: #2b2b2b;
+    }
+
+    p {
+      font-size: 12px;
+      padding: 14px;
+      margin: 0;
+    }
+    .active__div {
+      &:hover {
+        background-color: #f3f3f3;
+        color: $seafoam;
+      }
+
+      li.sidemenubar__notSelected {
+        height: 50px;
+        border-bottom: 1px solid #d7d7d7;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 14px 14px 14px 0px;
+        font-size: 14px;
+        margin-left: 14px;
+
+        &::after {
+          content: "";
+          position: relative;
+          border-top: 2px solid $seafoam;
+          border-right: 2px solid $seafoam;
+          width: 8px;
+          height: 8px;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  .sidemenubar__accordian {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidemenubar {
+    ul {
+      display: none;
+    }
+    .sidemenubar__accordian {
+      display: block;
+      .accordion-button {
+        border-radius: 15px 15px 0px 0px !important;
+        box-shadow: none;
+        background-color: white;
+      }
+      .accordion-button:not(.collapsed) {
+        color: $seafoam;
+      }
+      .accordion-item {
+        border-radius: 15px !important;
+      }
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0px;
+
+        a {
+          text-decoration: none;
+          color: #2b2b2b;
+        }
+
+        p {
+          font-size: 12px;
+          padding: 14px;
+          margin: 0;
+        }
+
+        li.activeroute {
+          background-color: #f3f3f3;
+          color: $seafoam;
+        }
+
+        li {
+          height: 3em;
+          border-top: 1px solid #f3f3f3;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding: 14px;
+          font-size: 14px;
+
+          &:hover {
+            background-color: #f3f3f3;
+            color: $seafoam;
+          }
+
+          &::after {
+            content: "";
+            position: relative;
+            border-top: 2px solid $seafoam;
+            border-right: 2px solid $seafoam;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .sidemenubar {
+    padding: 0px;
+    margin-bottom: 10px;
+    ul {
+      display: none;
+    }
+    .sidemenubar__accordian {
+      display: block;
+      .accordion-button {
+        border-radius: 15px 15px 0px 0px !important;
+        box-shadow: none;
+        background-color: white;
+      }
+      .accordion-button:not(.collapsed) {
+        color: $seafoam;
+      }
+      .accordion-item {
+        border-radius: 15px !important;
+      }
+      ol {
+        list-style: none;
+        padding: 0;
+
+        a {
+          text-decoration: none;
+          color: #2b2b2b;
+        }
+
+        p {
+          font-size: 12px;
+          padding: 14px;
+          margin: 0;
+        }
+
+        li.activeroute {
+          background-color: #f3f3f3;
+          color: $seafoam;
+        }
+
+        li {
+          height: 3em;
+          border-top: 1px solid #f3f3f3;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding: 14px;
+          font-size: 14px;
+
+          &:hover {
+            background-color: #f3f3f3;
+            color: $seafoam;
+          }
+
+          &::after {
+            content: "";
+            position: relative;
+            border-top: 2px solid $seafoam;
+            border-right: 2px solid $seafoam;
+            width: 8px;
+            height: 8px;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

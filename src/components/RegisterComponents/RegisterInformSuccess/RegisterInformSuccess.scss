@@ -1,0 +1,273 @@
+$seafoam: #37bfa7;
+$gray: #d3d3d3;
+@mixin circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+@mixin line {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+.gray {
+  color: #d3d3d3;
+}
+.green {
+  color: $seafoam;
+}
+.registerInformSuccess_div {
+  background-color: white;
+  .for__business__heding {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .registerInformSuccess {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    .registerInformSuccess_steps {
+      padding: 30px 0px;
+      .registerInformSuccess__business {
+        position: relative;
+        left: 45px;
+        p {
+          color: $seafoam;
+          font-weight: 600;
+        }
+        &:after {
+          @include line;
+          background: $seafoam;
+          margin-left: -45px;
+        }
+        .registerInformSuccess__business_circle {
+          @include circle;
+          padding: 1px 9px;
+          border: 3px solid $seafoam;
+          color: $seafoam;
+        }
+      }
+      .registerInformSuccess_categery {
+        position: relative;
+        p {
+          font-weight: 600;
+        }
+        &:after {
+          @include line;
+          background: $gray;
+          margin-left: -45px;
+        }
+        .registerInformSuccess_categery_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+          color: $gray;
+        }
+      }
+      .registerInformSuccess_adddocument {
+        position: relative;
+        right: 38px;
+        p {
+          font-weight: 600;
+        }
+        .registerInformSuccess_addbocument_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+          color: $gray;
+        }
+      }
+    }
+  }
+  .form_division {
+    background-color: #f4f6e9;
+    position: relative;
+    padding: 30px 0px 20px 0px;
+
+    .cor {
+      position: absolute;
+      left: 49%;
+      top: -6%;
+      width: 0;
+      height: 0;
+      border-left: 18px solid transparent;
+      border-right: 18px solid transparent;
+      border-bottom: 30px solid #f4f6e9;
+      background: #f4f6e9 0% 0% no-repeat padding-box;
+    }
+    .Register_b2b_form {
+      h4 {
+        margin: 0px;
+      }
+      hr {
+        margin: 0.6rem 0 1rem 0;
+      }
+      margin-bottom: 100px;
+      label {
+        font-size: 13px;
+        font-weight: 500;
+        position: relative;
+        top: -3px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    .jagota_footer-link {
+      padding: 40px;
+      color: gray;
+      text-align: center;
+    }
+    .footer_button {
+      background-color: $seafoam;
+      padding: 25px 50px;
+      color: white;
+      font-weight: 600;
+      border-radius: 0px;
+
+      .bg-green {
+        background-color: $seafoam !important;
+      }
+      .bg-gray {
+        background-color: #d3d3d3;
+      }
+      .footer_button_icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .registerInformSuccess_div {
+    .registerInformSuccess {
+      .registerInformSuccess_steps {
+        .registerInformSuccess__business {
+          p {
+            font-size: 12px;
+          }
+          left: 24px;
+          &:after {
+            width: 83px;
+            margin-left: -24px;
+          }
+        }
+        .registerInformSuccess_categery {
+          p {
+            font-size: 12px;
+          }
+          position: relative;
+          &:after {
+            width: 83px;
+            margin-left: -24px;
+          }
+        }
+        .registerInformSuccess_adddocument {
+          p {
+            font-size: 12px;
+          }
+          right: 15px;
+        }
+      }
+    }
+    .form_div {
+      width: 70% !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .registerInformSuccess_div {
+    .registerInformSuccess {
+      .registerInformSuccess_steps {
+        .registerInformSuccess__business {
+          p {
+            font-size: 12px;
+          }
+          left: 29px;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .registerInformSuccess_categery {
+          p {
+            font-size: 12px;
+          }
+          position: relative;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .registerInformSuccess_adddocument {
+          p {
+            font-size: 12px;
+          }
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .registerInformSuccess_div {
+    .registerInformSuccess {
+      .registerInformSuccess_steps {
+        .registerInformSuccess__business {
+          p {
+            font-size: 12px;
+          }
+          left: 29px;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .registerInformSuccess_categery {
+          p {
+            font-size: 12px;
+          }
+          position: relative;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .registerInformSuccess_adddocument {
+          p {
+            font-size: 12px;
+          }
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    display: grid;
+    max-width: 100%;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    height: 4em !important;
+
+    .jagota_footer-link {
+      padding: 0px !important;
+      color: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer_button {
+      padding: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,309 @@
+$seafoam: #37bfa7;
+.deliveryaddress {
+  background-color: white;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1em 5em;
+  min-height: 50vh;
+
+  .deliveryaddress__new {
+    .error {
+      color: red;
+      padding: 15px 0px;
+    }
+  }
+
+  .mx-2 {
+    margin: 0 !important;
+  }
+
+  .rmsc .dropdown-heading .dropdown-heading-value {
+    width: 10em;
+  }
+
+  .rmsc .dropdown-heading svg {
+    color: #37bfa7;
+  }
+
+  .deliveryaddress__locationchoose {
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    color: #2b2b2b;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+    ul {
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      list-style: none;
+      background-color: #f3f3f3;
+      color: #2b2b2b;
+      top: 3.2em;
+      left: 0;
+      right: 0;
+      transition: all 0.2s ease-in-out;
+
+      li {
+        padding: 14px 14px 14px 0px;
+      }
+    }
+
+    img {
+      margin-right: 1em;
+    }
+
+    &::after {
+      content: "\f078";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 1em;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .deliveryaddress__locationchoose__open {
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    color: #2b2b2b;
+    border-radius: 12px 12px 0 0;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      transform: rotate(180deg);
+      transition: all 0.2s ease-in-out;
+    }
+    ul {
+      opacity: 1;
+      z-index: 1;
+      border-radius: 0 0 12px 12px;
+      padding: 0px;
+      li {
+        border-top: 1px solid lightgray;
+        p {
+          margin: 0px 0px 0px 17px;
+          i {
+            width: 2em;
+            font-size: 20px;
+          }
+        }
+      }
+      li:hover {
+        background-color: #d3d3d3;
+      }
+      li:last-child:hover {
+        background-color: #d3d3d3;
+        border-radius: 0 0 12px 12px;
+      }
+    }
+  }
+
+  select {
+    // margin: 0 0 1em 0;
+  }
+
+  .deliveryaddress__addresscard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 10rem;
+    .add___newaddaress__option {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #56c36f26;
+      border: 2px dashed $seafoam;
+      border-radius: 12px;
+      padding: 48px 0px;
+      cursor: pointer;
+      p {
+        display: flex;
+        gap: 7px;
+        margin: 0px;
+        font-weight: 500;
+        color: $seafoam;
+      }
+    }
+  }
+
+  .deliveryaddress__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+    p {
+      background-color: $seafoam;
+      color: white;
+      padding: 0.3em 1em;
+      border-radius: 20px;
+      cursor: pointer;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .deliveryaddress__enter {
+    background-color: $seafoam;
+    color: white;
+    width: max-content;
+    margin: 1em auto;
+    padding: 0.5em 1.2em;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .deliveryaddress__googlemap iframe {
+    border-radius: 12px;
+  }
+
+  .deliveryaddress__new {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 2em 0;
+
+    select {
+      border-radius: 8px;
+    }
+
+    .role__flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .role__flex > .RoleDropdown {
+      margin: 0;
+      position: relative;
+
+      input {
+        display: none;
+      }
+      .dropdown-body.open {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 9;
+      }
+    }
+
+    input {
+      border-radius: 8px;
+      border: 1px solid #dcdbdb;
+      height: 36px;
+      width: 100%;
+    }
+
+    input[type="checkbox"] {
+      width: auto;
+    }
+
+    h6 {
+      font-size: 14px;
+      position: relative;
+      span {
+        padding-right: 3px;
+      }
+      i {
+        top: 2px;
+        color: red;
+        font-size: 7px;
+        position: absolute;
+      }
+    }
+  }
+
+  .deliveryaddress__confirm {
+    background-color: $seafoam;
+    color: white;
+    width: 351px;
+    height: 48px;
+    margin: 1.5em auto;
+    padding: 0.5em 1.2em;
+    border-radius: 12px;
+    font-weight: 500;
+    border: none;
+    &:disabled {
+      background-color: #d3d3d3;
+    }
+  }
+  .check__box {
+    display: flex;
+    gap: 5px;
+
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .form__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+.rmsc.multiSelect_dropdown {
+  .item-renderer {
+    align-items: center !important;
+    span {
+      margin-left: 10px;
+    }
+  }
+}
+
+.rmsc .dropdown-container {
+  border-radius: 8px !important;
+}
+@media (max-width: 1024px) {
+  .deliveryaddress .deliveryaddress__addresscard {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .deliveryaddress {
+    padding: 1em 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .deliveryaddress {
+    padding: 1em 3% 0.1em;
+    border-radius: 0px 0px 15px 15px;
+  }
+  .deliveryaddress .deliveryaddress__new,
+  .deliveryaddress .deliveryaddress__addresscard {
+    grid-template-columns: 100%;
+  }
+  .deliveryaddress .deliveryaddress__confirm {
+    width: 100%;
+  }
+  .deliveryaddress .deliveryaddress__enter {
+    padding: 0.8em 4em;
+  }
+}
+
+@media (max-width: 320px) {
+  .deliveryaddress .deliveryaddress__enter {
+    padding: 0.8em 3em;
+  }
+}
+
+
+//addrss height
+// .addresscard__location >h4{
+//   height: 12%;
+// }

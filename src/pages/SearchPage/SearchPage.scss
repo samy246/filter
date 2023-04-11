@@ -1,0 +1,195 @@
+$seafoam: #37bfa7;
+.searchpage {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  & > * {
+    padding: 2em 3%;
+  }
+
+  .searchpage__header {
+    text-align: center;
+    box-shadow: #2b2b2b1a 0px 5px 10px;
+    background-color: whitesmoke;
+  }
+
+  .searchpage__filter {
+    width: 20% !important;
+    box-shadow: #2b2b2b1a 0px 5px 10px;
+    height: max-content;
+  }
+
+  .searchpage__cardCount {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 2em 3%;
+
+    .searchpage__cardCount__cat {
+      font-weight: 600;
+      font-size: 24px;
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .searchpage__breadcrumbs {
+    nav ol.breadcrumb {
+      padding-left: 24px;
+      margin: 0;
+      li {
+        color: gray;
+        a {
+          color: gray;
+        }
+      }
+
+      li.active {
+        color: $seafoam;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .searchpage__content {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    background-color: white;
+    margin: 2em 3%;
+  }
+
+  .searchpage__data {
+    margin: 0 3%;
+    flex: 1;
+    margin: 0;
+
+    h5 {
+      color: gray;
+      margin-bottom: 1.5em;
+      text-align: left;
+
+      span {
+        color: #37bfa7;
+        text-align: center;
+      }
+    }
+    .catalog_header__menu {
+      // height: 110px;
+      border-radius: 10px;
+      background-color: white;
+      .catalog_header__menu__conatiner {
+        .carousel__menu {
+          max-width: 100%;
+          margin: auto;
+          .react-multi-carousel-track {
+            .react-multi-carousel-item {
+              display: block;
+              position: relative;
+              justify-content: center;
+              // height: 110px;
+
+              .catalogs__categoryList {
+                .catalogs__categoryList__div {
+                  //   width: 100%;
+                  //   margin: auto;
+                  a {
+                    padding: 10px;
+
+                    span {
+                      font-size: 14px;
+                      text-align: center;
+                      opacity: 1;
+                      color: gray;
+                      font-weight: 400;
+                      min-height: 49px;
+                      height: 100%;
+                      letter-spacing: 0;
+                      display: flex;
+                      align-items: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mycatalogs .mycatalogs__menu .mycatalogs__menu__list li a {
+      display: flex;
+      align-items: center;
+    }
+
+    .mycatalogs .mycatalogs_heading {
+      display: none;
+    }
+
+    .searchpage__card {
+      flex: 1;
+      max-width: 100%;
+      width: 100%;
+      margin: 4px auto 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      background-color: white;
+      padding: 1em 1em 5em;
+      min-height: 40vh;
+
+      .mycatalogs {
+        width: 100%;
+        background-color: white;
+      }
+    }
+
+    .pagination {
+      justify-content: center;
+      align-items: center;
+      margin-top: 5em;
+      
+      li.disabled {
+        display: none;
+      }
+
+      li {
+        margin: 0px 6px 50px 5px;
+
+        i {
+          color: $seafoam;
+        }
+        .arrow_pad {
+          border-radius: 20px;
+        }
+        p.active {
+          background: $seafoam 0% 0% no-repeat padding-box;
+          color: #ffff;
+        }
+
+        p,
+        a {
+          cursor: pointer;
+          box-shadow: 0px 3px 6px #2754aa26;
+          margin: 0px;
+          padding: 9px 15px;
+          background: #ffff;
+          border-radius: 8px;
+          text-decoration: none;
+          color: $seafoam !important;
+          font-weight: 600;
+        }
+      }
+
+      .active_page {
+        color: white !important;
+        a {
+          background: $seafoam !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+}

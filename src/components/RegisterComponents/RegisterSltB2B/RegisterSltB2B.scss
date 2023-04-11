@@ -1,0 +1,122 @@
+$seafoam: #37bfa7;
+$gray: #d3d3d3;
+.registerSltB2B {
+  background-color: white;
+  min-height: 100vh;
+  .registerSltB2B_heading {
+    padding: 60px 0px;
+    text-align: center;
+    color: #858585;
+    font-weight: 500;
+  }
+  .registerSltB2B_business,
+  .registerSltB2B_home {
+    cursor: pointer;
+  }
+  .registerSltB2B_business_p,
+  .registerSltB2B_home_p {
+    font-weight: bold;
+    color: $gray;
+    font-size: 28px;
+  }
+
+  .padding {
+    padding: 0px 50px;
+  }
+  .registerSltB2B_footer {
+    padding-top: 70px;
+    .registerSltB2B_button {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: white;
+      background: $seafoam 0% 0% no-repeat padding-box;
+      border-radius: 24px;
+      border: 1px solid transparent;
+      padding: 6px 50px;
+      i {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+.color_g {
+  color: $seafoam;
+  font-size: 30px;
+  font-weight: bold;
+}
+.border_img {
+  border: 4px solid $seafoam;
+}
+@media (max-width: 1024px) {
+  .registerSltB2B {
+    .registerSltB2B_home_p {
+      font-size: 20px;
+    }
+    .color_g {
+      color: $seafoam;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+  .registerSltB2B .registerSltB2B_business_p,
+  .registerSltB2B .registerSltB2B_home_p {
+    font-size: 20px;
+  }
+  .registerSltB2B {
+    .registerSltB2B_business_img,
+    .registerSltB2B_home_img {
+      width: 284px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .registerSltB2B {
+    .registerSltB2B_home_p {
+      font-size: 13px;
+    }
+    .color_g {
+      color: $seafoam;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  .registerSltB2B .registerSltB2B_business_p,
+  .registerSltB2B .registerSltB2B_home_p {
+    font-size: 15px;
+  }
+  .registerSltB2B {
+    .registerSltB2B_business_img,
+    .registerSltB2B_home_img {
+      width: 150px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .registerSltB2B {
+    .registerSltB2B_home_p {
+      font-size: 13px;
+    }
+    .color_g {
+      color: $seafoam;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  .registerSltB2B {
+    .registerSltB2B_business_img,
+    .registerSltB2B_home_img {
+      width: 100px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .reg__select {
+    gap: 2em;
+  }
+  .registerSltB2B_business,
+  .registerSltB2B_home {
+    padding: 0;
+  }
+}

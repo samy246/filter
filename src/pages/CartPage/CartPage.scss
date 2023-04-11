@@ -1,0 +1,45 @@
+$seafoam: #37bfa7;
+.cartpage {
+  margin: 0px auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 3em 3%;
+  .cartpage__order__list {
+    font-size: 14px;
+  }
+  .column_1 {
+    flex: 1;
+    box-shadow: 6px 8px 6px #2754aa29;
+    border: 1px solid #f3f3f3;
+    height: max-content;
+  }
+  .column_2 {
+    width: 371px;
+    box-shadow: 6px 8px 6px #2754aa29;
+    border: 1px solid #f3f3f3;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .cartpage__div {
+    display: flex;
+    gap: 10px;
+  }
+}
+.cartpage__prograss {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .cartpage__div {
+    display: block !important;
+    .column_2 {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .cartpage {
+    padding: 0em 3% 3em;
+  }
+}

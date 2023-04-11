@@ -1,0 +1,43 @@
+{
+    "AllCategory": [
+        {
+            "AllMeat": [
+                {
+                    "label": "All Meats",
+                    "value": "AllMeats",
+                    "link": "/product/Allmeat"
+                },
+                {
+                    "label": "Beefs",
+                    "value": "Beefs",
+                    "link": "/product/Beef"
+                },
+                {
+                    "label": "Pork",
+                    "value": "Pork",
+                    "link": "/product/Pork"
+                },
+                {
+                    "label": "Lamb",
+                    "value": "Lamb",
+                    "link": "/product/Lamb"
+                },
+                {
+                    "label": "Chicken",
+                    "value": "Chicken",
+                    "link": "/product/Chicken"
+                },
+                {
+                    "label": "Duck",
+                    "value": "Duck",
+                    "link": "/product/Duck"
+                },
+                {
+                    "label": "Sausage",
+                    "value": "Sausage",
+                    "link": "/product/Sausage"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+@mixin house {
+  border-radius: 20px;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+$seafoam: #37bfa7;
+.Login_Flow_Login_2 {
+  .Login_Flow_Login_2_houses {
+    width: 528px;
+    .Login_Flow_Login_2_organic_form {
+      @include house;
+      border: 1px solid #dcdbdb;
+
+      span {
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .Login_Flow_Login_2_steak_house {
+      @include house;
+      border: 1px solid #dcdbdb;
+
+      span {
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .Login_Flow_Login_2_burger_house {
+      @include house;
+      border: 1px solid #dcdbdb;
+
+      span {
+        padding-left: 20px;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+  .Login_Flow_Login_2_btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-decoration: none;
+    background: $seafoam;
+    border-radius: 24px;
+    border: 1px solid $seafoam;
+    padding: 6px 50px;
+    i {
+      padding-left: 5px;
+    }
+  }
+}
+.green {
+  color: $seafoam;
+}
+.gray {
+  color: #858585;
+}
+
+.selected {
+  @include house;
+  border: 2px solid $seafoam;
+  background: #57c36f26 0% 0% no-repeat padding-box;
+
+  span {
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 468px) {
+  .selected {
+    img {
+      width: 70px;
+    }
+  }
+  .Login_Flow_Login_2 {
+    .Login_Flow_Login_2_sub_div {
+      padding: 30px 0px !important;
+    }
+    .Login_Flow_Login_2_houses {
+      width: 100%;
+      .Login_Flow_Login_2_organic_form {
+        @include house;
+        border: 1px solid #dcdbdb;
+        div {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+
+          img {
+            width: 70px;
+          }
+          span {
+            padding-left: 7px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+      .Login_Flow_Login_2_steak_house {
+        @include house;
+        border: 1px solid #dcdbdb;
+        div {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+
+          img {
+            width: 70px;
+          }
+          span {
+            padding-left: 7px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+      .Login_Flow_Login_2_burger_house {
+        @include house;
+        border: 1px solid #dcdbdb;
+        div {
+          display: flex;
+          gap: 6px;
+          align-items: center;
+
+          img {
+            width: 70px;
+          }
+          span {
+            padding-left: 7px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .Login_Flow_Login_2_btn {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: white;
+      text-decoration: none;
+      background: $seafoam;
+      border-radius: 24px;
+      border: 1px solid $seafoam;
+      padding: 6px 50px;
+      i {
+        padding-left: 5px;
+      }
+    }
+  }
+}

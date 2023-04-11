@@ -1,0 +1,33 @@
+$seafoam: #37bfa7;
+.RegisterHomeCookingInformSuccessScreen_main {
+  padding: 20px;
+  .RegisterHomeCookingInformSuccessScreen_info {
+    padding: 50px 0px;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+
+    h4 {
+      color: $seafoam;
+    }
+
+    .RegisterHomeCookingInformSuccessScreen_icon {
+      color: $seafoam;
+    }
+    .RegisterHomeCookingInformSuccessScreen_text {
+      color: #858585;
+      padding: 22px 0px;
+    }
+    .Register_b2c_success_button {
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: white;
+      background: $seafoam 0% 0% no-repeat padding-box;
+      border-radius: 24px;
+      border: 1px solid transparent;
+      padding: 6px 50px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+  <g id="Group_15419" data-name="Group 15419" transform="translate(-22.5 -136)" opacity="0.705">
+    <path id="Card" d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(23 136.5)" fill="#fff" stroke="#b72413" stroke-width="1"/>
+    <path id="plus-minus-solid" d="M20.62,10.907h3.043v3a1.582,1.582,0,0,0,1.62,1.577A1.611,1.611,0,0,0,26.9,13.91v-3h3.043a1.623,1.623,0,0,0,0-3.245H26.9V4.613a1.62,1.62,0,1,0-3.24,0V7.662H20.62a1.622,1.622,0,0,0,0,3.245Z" transform="translate(7.716 137.01)" fill="#b72413"/>
+  </g>
+</svg>

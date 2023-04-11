@@ -1,0 +1,228 @@
+$green: #56c36f;
+$gray: #d3d3d3;
+@mixin circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+@mixin line {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+.gray {
+  color: #d3d3d3;
+}
+.green {
+  color: $green;
+}
+.Register_inform_success_div {
+  background-color: white;
+  .Register_inform_success {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    .Register_inform_success_steps {
+      padding: 30px 0px;
+      .Register_inform_success__business {
+        position: relative;
+        left: 53px;
+        &:after {
+          @include line;
+          background: $green;
+          margin-left: -53px;
+        }
+        .Register_inform_success__business_circle {
+          @include circle;
+          padding: 1px 9px;
+          border: 3px solid $green;
+          color: $green;
+        }
+      }
+      .Register_inform_success_categery {
+        position: relative;
+        &:after {
+          @include line;
+          background: $gray;
+          margin-left: -53px;
+        }
+        .Register_inform_success_categery_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+          color: $gray;
+        }
+      }
+      .Register_inform_success_adddocument {
+        position: relative;
+        right: 43px;
+        .Register_inform_success_addbocument_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+          color: $gray;
+        }
+      }
+    }
+  }
+  .form_division {
+    background-color: #f4f6e9;
+    position: relative;
+    padding: 30px 0px 20px 0px;
+
+    .cor {
+      position: absolute;
+      left: 50%;
+      top: -53px;
+      width: 5px;
+      overflow: hidden;
+      border: 20px solid transparent;
+      border-bottom-color: #f4f6e9;
+    }
+    .Register_b2b_form {
+      margin-bottom: 100px;
+      label {
+        font-size: 10px;
+        font-weight: 600;
+        position: relative;
+        top: -3px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    .jagota_footer-link {
+      padding: 40px;
+      color: gray;
+    }
+    .footer_button {
+      background-color: $green;
+      padding: 25px 50px;
+      color: white;
+      border-radius: 0px;
+
+      .bg-green {
+        background-color: #3caa67 !important;
+      }
+      .bg-gray {
+        background-color: #d3d3d3;
+      }
+      .footer_button_icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Register_inform_success_div {
+    .Register_inform_success {
+      .Register_inform_success_steps {
+        .Register_inform_success__business {
+          p {
+            font-size: 12px;
+          }
+          left: 24px;
+          &:after {
+            width: 83px;
+            margin-left: -24px;
+          }
+        }
+        .Register_inform_success_categery {
+          p {
+            font-size: 12px;
+          }
+          position: relative;
+          &:after {
+            width: 83px;
+            margin-left: -24px;
+          }
+        }
+        .Register_inform_success_adddocument {
+          p {
+            font-size: 12px;
+          }
+          right: 15px;
+        }
+      }
+    }
+    .form_div {
+      width: 70% !important;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Register_inform_success_div {
+    .Register_inform_success {
+      .Register_inform_success_steps {
+        .Register_inform_success__business {
+          p {
+            font-size: 12px;
+          }
+          left: 29px;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .Register_inform_success_categery {
+          p {
+            font-size: 12px;
+          }
+          position: relative;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .Register_inform_success_adddocument {
+          p {
+            font-size: 12px;
+          }
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .Register_inform_success_div {
+    .Register_inform_success {
+      .Register_inform_success_steps {
+        .Register_inform_success__business {
+          p {
+            font-size: 12px;
+          }
+          left: 29px;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .Register_inform_success_categery {
+          p {
+            font-size: 12px;
+          }
+          position: relative;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+        }
+        .Register_inform_success_adddocument {
+          p {
+            font-size: 12px;
+          }
+          right: 20px;
+        }
+      }
+    }
+  }
+}

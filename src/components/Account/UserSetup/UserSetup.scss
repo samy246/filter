@@ -1,0 +1,255 @@
+$seafoam: #37bfa7;
+.usersetup {
+  border-radius: 0px 15px 15px 0px;
+  background: white;
+  padding: 2rem;
+
+  .usersetup__adminlevel {
+    margin-top: 2em;
+  }
+
+  .active {
+    box-shadow: 0px 5px 10px #0000001a;
+    opacity: 1;
+    .usersetup__admin__card__footer {
+      .icon {
+        i {
+          color: $seafoam;
+        }
+      }
+    }
+  }
+  .imageSvg{
+    display: flex; 
+    margin-right: auto;
+   
+    font-size: smaller;
+    // margin-top: auto;
+    position: relative;
+    background-color: white;
+    color: black;
+//  background-color: ;
+  // border-bottom: 1px dotted black;
+    cursor: pointer;
+  }
+
+  .level__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .imageSvg {
+    position: relative;
+    display: inline-block;
+    // border-bottom: 1px dotted black;
+  }
+  
+  .imageSvg .ttooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: whitesmoke;
+    color: #2b2b2b;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    width: 700%;
+    top: 2px;
+    left: 110%;
+  }
+  
+  .imageSvg .ttooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    // width: 700%;
+    border-color: transparent black transparent transparent;
+  }
+  .imageSvg:hover .ttooltiptext {
+    visibility: visible;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .usersetup__newuser__button {
+    background-color: $seafoam;
+    color: white;
+    width: max-content;
+    padding: 0.4em 1.2em;
+    border: 1px solid $seafoam;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .active__test {
+    box-shadow: 0px 5px 10px #0000001a;
+    opacity: 1;
+    .usersetup__admin__card__footer {
+      .icon {
+        i {
+          color: $seafoam;
+        }
+      }
+    }
+  }
+  .usersetup__topdiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .usersetup__activitylogs {
+    max-height: 40vh;
+    overflow-y: scroll;
+
+    .usersetup__readmore {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      cursor: pointer;
+      margin: 1em 1em;
+      float: right;
+      padding: 0.5em 1.2em;
+      border-radius: 20px;
+      background-color: $seafoam;
+      color: white;
+      font-weight: 600;
+      width: max-content;
+    }
+
+    &::-webkit-scrollbar {
+      width: 2px !important;
+      display: block;
+      scrollbar-width: thin;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: darkgrey;
+      outline: 1px solid slategrey;
+    }
+    h5 {
+      margin-bottom: 10px;
+    }
+    .usersetup__activitylogs__div {
+      &:hover {
+        box-shadow: 0px 5px 10px #0000001a;
+      }
+    }
+  }
+  .adminlevel__cards,
+  .usersetup__supervisorlevel__cards,
+  .usersetup__purchaselevel__cards {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1024px) {
+  .usersetup {
+    padding: 2rem 1rem;
+    .logs__userdata {
+      width: 26vw;
+    }
+    .adminlevel__cards {
+      display: grid;
+      justify-content: center;
+    }
+    .usersetup__supervisorlevel__cards {
+      display: grid;
+      gap: 15px;
+      justify-content: center;
+    }
+    .usersetup__purchaselevel__cards {
+      display: grid;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .usersetup {
+    padding: 2rem 0.5rem;
+    .logs__userdata {
+      width: 40vw;
+    }
+    .usersetup__supervisorlevel__cards {
+      display: flex;
+      gap: 15px;
+    }
+    .adminlevel__cards {
+      display: block;
+    }
+    .usersetup__purchaselevel__cards {
+      display: flex;
+      gap: 15px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .usersetup {
+    padding: 2rem 0.5rem;
+    border-radius: 0px 0px 15px 15px;
+    .logs__userdata {
+      width: 40vw;
+    }
+    .adminlevel__cards {
+      display: grid;
+      justify-content: center;
+    }
+    .usersetup__supervisorlevel__cards {
+      display: grid;
+      gap: 15px;
+      justify-content: center;
+    }
+    .usersetup__purchaselevel__cards {
+      display: grid;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
+}

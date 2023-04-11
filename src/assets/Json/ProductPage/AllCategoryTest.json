@@ -1,0 +1,301 @@
+{
+    "AllCategory": [
+        {
+            "label": "AllMeats",
+            "link": "/product/AllMeats",
+            "value": "AllMeats",
+            "image": "../../assets/images/CatalogHeader/All_category.png",
+            "category": [
+                    {
+                        "label": "Beefs",
+                        "value": "Beefs",
+                        "link": "/product/AllMeats/Beef"
+                    },
+                    {
+                        "label": "Pork",
+                        "value": "Pork",
+                        "link": "/product/AllMeats/Pork"
+                    },
+                    {
+                        "label": "Lamb",
+                        "value": "Lamb",
+                        "link": "/product/AllMeats/Lamb"
+                    },
+                    {
+                        "label": "Chicken",
+                        "value": "Chicken",
+                        "link": "/product/AllMeats/Chicken"
+                    },
+                    {
+                        "label": "Duck",
+                        "value": "Duck",
+                        "link": "/product/AllMeats/Duck"
+                    },
+                    {
+                        "label": "Sausage",
+                        "value": "Sausage",
+                        "link": "/product/AllMeats/Sausage"
+                    }
+                ]
+        },
+        {
+            "label": "SeaFood",
+            "link": "/product/SeaFood",
+            "value": "SeaFood",
+      "icon": "fas fa-fish",
+            "category": [
+                    {
+                        "label": "SeaFood1",
+                        "value": "SeaFood1",
+                        "link": "/product/SeaFood/SeaFood1"
+                    },
+                    {
+                        "label": "SeaFood2`",
+                        "value": "SeaFood2",
+                        "link": "/product/SeaFood/SeaFood2"
+                    },
+                    {
+                        "label": "SeaFood3",
+                        "value": "SeaFood3",
+                        "link": "/product/SeaFood/SeaFood3"
+                    },
+                    {
+                        "label": "SeaFood4",
+                        "value": "SeaFood4",
+                        "link": "/product/SeaFood/SeaFood4"
+                    },
+                    {
+                        "label": "SeaFood5",
+                        "value": "SeaFood5",
+                        "link": "/product/SeaFood/SeaFood5"
+                    },
+                    {
+                        "label": "SeaFood6",
+                        "value": "SeaFood6",
+                        "link": "/product/SeaFood/SeaFood6"
+                    }
+                ]
+        },
+        {
+            "label": "Fruits&Veg",
+                  "icon": "fas fa-apple-alt",
+
+            "link": "/product/Fruits&Veg",
+            "value": "Fruits&Veg",
+            "category": [
+                    {
+                        "label": "Fruits&Veg1",
+                        "value": "Fruits&Veg1",
+                        "link": "/product/Fruits&Veg/Fruits&Veg1"
+                    },
+                    {
+                        "label": "Fruits&Veg2",
+                        "value": "Fruits&Veg2",
+                        "link": "/product/Fruits&Veg/Fruits&Veg2"
+                    },
+                    {
+                        "label": "Fruits&Veg3",
+                        "value": "Fruits&Veg3",
+                        "link": "/product/Fruits&Veg/Fruits&Veg3"
+                    },
+                    {
+                        "label": "Fruits&Veg4",
+                        "value": "Fruits&Veg4",
+                        "link": "/product/Fruits&Veg/Fruits&Veg4"
+                    },
+                    {
+                        "label": "Fruits&Veg5",
+                        "value": "Fruits&Veg5",
+                        "link": "/product/Fruits&Veg/Fruits&Veg5"
+                    },
+                    {
+                        "label": "Fruits&Veg6",
+                        "value": "Fruits&Veg6",
+                        "link": "/product/Fruits&Veg/Fruits&Veg6"
+                    },
+                    {
+                        "label": "Fruits&Veg7",
+                        "value": "Fruits&Veg7",
+                        "link": "/product/Fruits&Veg/Fruits&Veg7"
+                    }
+                ]
+        },
+        {
+            "label": "Dairy",
+            "link": "/product/Dairy",
+            "value": "Dairy",
+                  "icon": "fas fa-cheese",
+
+            "category": [
+                    {
+                        "label": "Dairy1",
+                        "value": "Dairy1",
+                        "link": "/product/Dairy/Dairy1"
+                    },
+                    {
+                        "label": "Dairy2",
+                        "value": "Dairy2",
+                        "link": "/product/Dairy/Dairy2"
+                    },
+                    {
+                        "label": "Dairy3",
+                        "value": "Dairy3",
+                        "link": "/product/Dairy/Dairy3"
+                    },
+                    {
+                        "label": "Dairy4",
+                        "value": "Dairy4",
+                        "link": "/product/Dairy/Dairy4"
+                    },
+                    {
+                        "label": "Dairy5",
+                        "value": "Dairy5",
+                        "link": "/product/Dairy/Dairy5"
+                    },
+                    {
+                        "label": "Dairy6",
+                        "value": "Dairy6",
+                        "link": "/product/Dairy/Dairy6"
+                    },
+                    {
+                        "label": "Dairy7",
+                        "value": "Dairy7",
+                        "link": "/product/Dairy/Dairy7"
+                    }
+                ]
+        },
+        {
+            "label": "Pasta",
+            "link": "/product/Pasta",
+            "value": "Pasta",
+                  "icon": "fas fa-utensils",
+
+            "category": [
+                    {
+                        "label": "Pasta1",
+                        "value": "Pasta1",
+                        "link": "/product/Pasta/Pasta1"
+                    },
+                    {
+                        "label": "Pasta2",
+                        "value": "Pasta2",
+                        "link": "/product//PastaPasta2"
+                    },
+                    {
+                        "label": "Pasta3",
+                        "value": "Pasta3",
+                        "link": "/product//PastaPasta3"
+                    },
+                    {
+                        "label": "Pasta4",
+                        "value": "Pasta4",
+                        "link": "/product/Pasta/Pasta4"
+                    },
+                    {
+                        "label": "Pasta5",
+                        "value": "Pasta5",
+                        "link": "/product/Pasta/Pasta5"
+                    },
+                    {
+                        "label": "Pasta6",
+                        "value": "Pasta6",
+                        "link": "/product/Pasta/Pasta6"
+                    },
+                    {
+                        "label": "Pasta7",
+                        "value": "Pasta7",
+                        "link": "/product/Pasta/Pasta7"
+                    }
+                ]    
+        },
+        {
+            "label": "Pasta11",
+            "link": "/product/Pasta11",
+            "value": "Pasta11",
+                  "icon": "fas fa-utensils",
+
+            "category": [
+                    {
+                        "label": "Pasta1",
+                        "value": "Pasta1",
+                        "link": "/product/Pasta/Pasta1"
+                    },
+                    {
+                        "label": "Pasta2",
+                        "value": "Pasta2",
+                        "link": "/product//PastaPasta2"
+                    },
+                    {
+                        "label": "Pasta3",
+                        "value": "Pasta3",
+                        "link": "/product//PastaPasta3"
+                    },
+                    {
+                        "label": "Pasta4",
+                        "value": "Pasta4",
+                        "link": "/product/Pasta/Pasta4"
+                    },
+                    {
+                        "label": "Pasta5",
+                        "value": "Pasta5",
+                        "link": "/product/Pasta/Pasta5"
+                    },
+                    {
+                        "label": "Pasta6",
+                        "value": "Pasta6",
+                        "link": "/product/Pasta/Pasta6"
+                    },
+                    {
+                        "label": "Pasta7",
+                        "value": "Pasta7",
+                        "link": "/product/Pasta/Pasta7"
+                    }
+                ]    
+        },
+        {
+            "label": "Western Gourmet",
+            "link": "/product/Western Gourmet",
+                  "icon": "fas fa-hamburger",
+
+            "value": "Western Gourmet",
+            "category": [
+                    {
+                        "label": "Western Gourmet1",
+                        "value": "Western Gourmet1",
+                        "link": "/product/Western Gourmet/Western Gourmet1"
+                    },
+                    {
+                        "label": "Western Gourmet2",
+                        "value": "Western Gourmet2",
+                        "link": "/product/Western Gourmet/Western Gourmet2"
+                    },
+                    {
+                        "label": "Western Gourmet3",
+                        "value": "Western Gourmet3",
+                        "link": "/product/Western Gourmet/Western Gourmet3"
+                    },
+                    {
+                        "label": "Western Gourmet4",
+                        "value": "Western Gourmet4",
+                        "link": "/product/Western Gourmet/Western Gourmet4"
+                    },
+                    {
+                        "label": "Western Gourmet5",
+                        "value": "Western Gourmet5",
+                        "link": "/product/Western Gourmet/Western Gourmet5"
+                    },
+                    {
+                        "label": "Western Gourmet6",
+                        "value": "Western Gourmet6",
+                        "link": "/product/Western Gourmet/Western Gourmet6"
+                    },
+                    {
+                        "label": "Western Gourmet7",
+                        "value": "Western Gourmet7",
+                        "link": "/product/Western Gourmet/Western Gourmet7"
+                    }
+                ]
+           
+        }
+    ]
+}

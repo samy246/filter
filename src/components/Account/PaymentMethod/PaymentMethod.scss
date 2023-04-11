@@ -1,0 +1,128 @@
+$seafoam: #37bfa7;
+.paymentmethod {
+  background-color: white;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1em 5em;
+  min-height: 50vh;
+
+  .paymentmethod_newcard {
+    .paymentmethod_button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1em;
+
+      p {
+        border-radius: 8px;
+        padding: 0.5em 4em;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .paymentmethod_save {
+        border-radius: 8px;
+        padding: 0.5em 4em;
+        color: white;
+        font-weight: 500;
+        border: none;
+        background-color: $seafoam;
+
+        &:disabled {
+          background-color: #d3d3d3;
+        }
+      }
+      p.paymentmethod_cancel {
+        color: #858585;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .paymentmethod__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      background-color: $seafoam;
+      color: white;
+      padding: 0.3em 1em;
+      border-radius: 20px;
+      margin: 0;
+      cursor: pointer;
+      span.paymentmethod__addbutton {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .paymentmethod__tab {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    gap: 1em;
+
+    p {
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    p.paymentmethod__cards {
+      margin: 0;
+    }
+
+    p.cardSelected {
+      margin: 0;
+      border-bottom: 5px solid $seafoam;
+      line-height: 1;
+    }
+  }
+
+  .paymentmethod__cardInfo {
+    display: flex;
+    justify-content: space-between;
+
+    .form-check-input:checked {
+      background-color: $seafoam;
+      border-color: $seafoam;
+    }
+
+    img {
+      margin-top: -2em;
+      width: 15em;
+      object-fit: contain;
+    }
+  }
+
+  .paymentmethod__cardform img {
+    position: absolute;
+    height: 1.5em;
+    right: 7.5em;
+    top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .newcardform__creditCardDetails
+    .newcardform__transactionDetails
+    p.newcardform__description {
+    width: 95% !important;
+  }
+  .paymentmethod {
+    padding: 1em 3%;
+    border-radius: 0px 0px 15px 15px;
+    .paymentmethod_button {
+      flex-flow: column-reverse;
+      .paymentmethod_save {
+        width: 100%;
+      }
+    }
+    .paymentmethod__cardInfo {
+      flex-direction: column-reverse;
+    }
+  }
+}

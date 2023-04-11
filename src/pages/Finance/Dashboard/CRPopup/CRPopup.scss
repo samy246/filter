@@ -1,0 +1,39 @@
+$seafoam: #37bfa7;
+.CRbutton {
+  background-color: $seafoam;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #00000029;
+  font-size: 16px;
+  color: #fff;
+  height: 40px;
+  width: 150px;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.CR__amount,
+.CR__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: space-between;
+
+  input,
+  textarea {
+    width: 140px;
+  }
+}
+
+.CR__sendbutton {
+  font-size: 14px;
+  justify-content: center;
+  background-color: #fdc156;
+  color: #2b2b2b;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+  font-weight: 500;
+  border-radius: 12px;
+}

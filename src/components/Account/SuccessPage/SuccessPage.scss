@@ -1,0 +1,43 @@
+$seafoam: #37bfa7;
+.successpage {
+  text-align: center;
+  border-radius: 0px 15px 15px 0px;
+  background: white;
+  padding: 5rem 10rem 10rem;
+  p {
+    font-size: 20px;
+  }
+  i {
+    padding-bottom: 30px;
+    font-size: 6rem;
+  }
+  h2 {
+    padding-bottom: 10px;
+  }
+  .continue__btn {
+    background-color: $seafoam;
+    color: white;
+    padding: 10px 0px;
+    border: 1px solid #3ab67d;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 468px) {
+  .successpage {
+    border-radius: 0px 0px 15px 15px;
+    margin-top: 10px;
+    padding: 2rem 0rem 2rem;
+    h2 {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    p {
+      padding-right: 10px;
+      padding-left: 10px;
+      font-size: 15px;
+    }
+  }
+}

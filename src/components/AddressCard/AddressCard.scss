@@ -1,0 +1,116 @@
+$seafoam: #37bfa7;
+.addresscard {
+  border-radius: 12px;
+  border: 1px solid lightgray;
+
+  // height: max-content;
+cursor: pointer;
+
+  .addresscard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 14px;
+    height: 100px;
+
+    .addresscard__location {
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      p {
+        color: #858585;
+        font-size: 12px;
+      }
+    }
+
+    .addresscard__status {
+      min-width: 30%;
+
+      p.addresscard__active {
+        background-color: #56c36f26;
+        color: $seafoam;
+        border: 1px solid $seafoam;
+        border-radius: 20px;
+        margin: 0;
+        text-align: center;
+      }
+      p.addresscard__pending {
+        background-color: #fab7001a;
+        color: #fab700;
+        border: 1px solid #fab700;
+        border-radius: 20px;
+        margin: 0;
+        text-align: center;
+        width: max-content;
+        padding: 0px 5px 0px 5px;
+      }
+    }
+  }
+
+  .addresscard__options {
+    background-color: #d3d3d326;
+    padding: 10px 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    border-top: 1px solid #dcdbdb;
+
+    .addresscard__text {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      i {
+        font-size: 16px;
+        color: lightgray;
+        cursor: pointer;
+        border-radius: 50%;
+
+        &:hover {
+          color: white;
+          background: $seafoam;
+        }
+      }
+      #chkdefault{
+        color: white;
+        background: $seafoam;
+      }
+      span {
+        font-weight: 500;
+        color: #858585;
+        font-size: 12px;
+      }
+    }
+
+    .addresscard__icons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+
+      img {
+        height: 1.75em;
+        width: 1.75em;
+        background-color: white;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 100%;
+        padding: 6px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.AddressModal {
+  width: 312px;
+  text-align: center;
+  padding: 1em 2em;
+  h4 {
+    margin: 20px 0px;
+  }
+  .conform__text {
+    font-weight: 400;
+    margin: 0px 0px 30px 0px;
+  }
+}

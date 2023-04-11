@@ -1,0 +1,32 @@
+$seafoam: #37bfa7;
+.mainBanner {
+  .slick-slide img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .slick-track {
+    right: 0;
+  }
+  img {
+    border-radius: 0;
+  }
+  button.slick-arrow.slick-next {
+    display: none !important;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $seafoam;
+  }
+  .slick-dots li button:before {
+    color: white;
+  }
+  .slick-dots {
+    bottom: 16px;
+    position: unset !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 14px;
+  }
+}

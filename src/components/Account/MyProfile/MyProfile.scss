@@ -1,0 +1,191 @@
+$seafoam: #37bfa7;
+.myprofile {
+  background-color: white;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1em 5em;
+
+  h3 {
+    border: none;
+  }
+  .error {
+    color: red;
+    padding: 15px 0px;
+  }
+  .myprofile__topContent {
+    display: flex;
+    justify-content: space-between;
+    .myprofile__img {
+      display: flex;
+      gap: 20px;
+      .myprofile__imgdata {
+        display: grid;
+        grid-gap: 10px;
+
+        label {
+          cursor: pointer;
+        }
+
+        .fileuploader {
+          display: none;
+        }
+
+        p {
+          color: $seafoam;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        img {
+          border-radius: 100%;
+          max-height: 50px;
+          max-width: 50px;
+          object-fit: contain;
+        }
+      }
+      .myprofile__namerole {
+        .myprofile__img__edit {
+          display: flex;
+          align-items: baseline;
+          gap: 7px;
+        }
+        p {
+          color: #858585;
+        }
+      }
+    }
+    .myprofile__active {
+      display: flex;
+      gap: 10px;
+      .myprofile__active_check {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: 25px;
+        .form-check-input {
+          width: 50px;
+          height: 25px;
+        }
+        .form-check-input:checked {
+          background-color: $seafoam;
+          border-color: $seafoam !important;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+        }
+
+        .form-check-input:focus {
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          outline: 0;
+          box-shadow: none;
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+        }
+      }
+    }
+  }
+
+  .myprofile__form {
+    h6 {
+      margin-top: 20px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid lightgray;
+      border-radius: 8px;
+      font-size: 12px;
+      height: 36px;
+      font-weight: 500;
+      padding: 0px 55px 0px 10px;
+    }
+
+    .myprofile__value {
+      position: relative;
+      .admin:disabled {
+        background: lightgray;
+      }
+      img,
+      p {
+        position: absolute;
+        right: 16px;
+        top: 10px;
+        bottom: 0;
+        cursor: pointer;
+      }
+
+      p {
+        color: $seafoam;
+        text-decoration: underline;
+      }
+
+      input {
+        background-color: white;
+      }
+    }
+
+    .myprofile__value__edit {
+      position: relative;
+
+      img,
+      p {
+        position: absolute;
+        right: 16px;
+        top: 10px;
+        bottom: 0;
+        cursor: pointer;
+      }
+
+      p {
+        color: $seafoam;
+        text-decoration: underline;
+        margin: 0;
+        top: 6px;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="email"] {
+        font-size: 15px;
+        font-weight: 500;
+        height: 36px;
+      }
+      input {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+  }
+
+  .myprofile__buttons {
+    display: flex;
+    flex-direction: column;
+
+    .myprofile__save {
+      background-color: $seafoam;
+      color: white;
+      font-size: 14px;
+      padding: 10px 0;
+      font-weight: 500;
+      text-align: center;
+      vertical-align: sub;
+      margin: 1em 0;
+      border-radius: 12px;
+    }
+
+    .myprofile__cancel {
+      font-size: 14px;
+      padding: 10px 0;
+      font-weight: 500;
+      text-align: center;
+      vertical-align: sub;
+      margin: 0;
+      border-radius: 12px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .myprofile .myprofile__topContent {
+    flex-direction: column;
+  }
+  .myprofile .myprofile__topContent .myprofile__img .myprofile__imgdata p {
+    font-size: 14px;
+  }
+}

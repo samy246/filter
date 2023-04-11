@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "myproducts": [
+        {
+          "categoryname": "cname1",
+          "categoryid": "cid1",
+          "productname": "pnam1",
+          "productid": "pid1"
+        },
+        {
+          "categoryname": "cname2",
+          "categoryid": "cid12",
+          "productname": "pnam2",
+          "productid": "pid2"
+        }
+      ],
+      "catalog": [
+        {
+          "categoryname": "cname13",
+          "categoryid": "cid13",
+          "productname": "pnam31",
+          "productid": "pid31"
+        },
+        {
+          "categoryname": "cname14",
+          "categoryid": "cid145",
+          "productname": "pnam136",
+          "productid": "pid1645"
+        }
+      ]
+    }
+  ]
+}

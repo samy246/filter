@@ -1,0 +1,40 @@
+$seafoam: #37bfa7;
+.return {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 8px #2b2b2b1a;
+    padding: 2em;
+    position: relative;
+
+    .return__goback {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        color: white;
+        background-color: $seafoam;
+    }
+
+    table, th, td {
+        border: 1px solid #2b2b2b;
+        border-collapse: collapse;
+        color: #2b2b2b;
+        font-weight: 500;
+      }
+
+    ul {
+        p {
+            span {
+                display: block;
+            }
+        }
+
+        li {
+            color: $seafoam;
+        }
+    }
+
+    .return__title {
+        color: $seafoam;
+    }
+}

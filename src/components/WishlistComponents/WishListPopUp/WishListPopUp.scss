@@ -1,0 +1,64 @@
+.wishlistpopup__body {
+  padding: 20px;
+  min-width: 320px;
+  width: 100%;
+
+  h6 {
+    padding: 1.5em 0 !important;
+  }
+
+  .wishlistpopup__body__icon {
+    background: #bd2121;
+    color: white;
+    padding: 18px 20px;
+    border-radius: 50%;
+  }
+
+  .popup__text {
+    padding-bottom: 50px;
+  }
+  .wishlistpopup__button {
+    .remove__button {
+      background: #bd2121 !important;
+    }
+    .remove__button,
+    .Cancle_button {
+      padding: 0.5rem 1rem !important;
+      font-size: 1.25rem;
+      border-radius: 10px !important;
+    }
+  }
+}
+
+.modal-90w {
+  max-width: 25% !important;
+}
+.modal-content {
+  border-radius: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .modal-90w {
+    max-width: 35% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-90w {
+    max-width: 50% !important;
+  }
+
+  .modal-content {
+    margin-top: 25vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-90w {
+    max-width: 100% !important;
+  }
+
+  .modal-content {
+    margin-top: 22vh;
+  }
+}

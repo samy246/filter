@@ -1,0 +1,13 @@
+.myfinance {
+  .creditinfo {
+    min-height: 50vh;
+  }
+  .creditinfo__accInfo {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 7px;
+    h4 {
+      font-weight: 600;
+    }
+  }
+}

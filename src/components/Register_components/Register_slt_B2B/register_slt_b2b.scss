@@ -1,0 +1,74 @@
+$green: #56c36f;
+$gray: #d3d3d3;
+.Register_slt_B2B {
+  background-color: white;
+  min-height: 100vh;
+  .Register_slt_B2B_heading {
+    padding: 60px 0px;
+    text-align: center;
+    color: #858585;
+  }
+  .Register_slt_B2B_business,
+  .Register_slt_B2B_home {
+    cursor: pointer;
+  }
+  .Register_slt_B2B_business_p,
+  .Register_slt_B2B_home_p {
+    font-weight: bolder;
+  }
+  .Register_slt_B2B_home_p {
+    color: $gray;
+  }
+  .Register_slt_B2B_business_p {
+    color: $gray;
+  }
+  .padding {
+    padding: 0px 50px;
+  }
+  .Register_slt_B2B_footer {
+    padding-top: 70px;
+    .Register_slt_B2B_button {
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.5;
+      color: white;
+      background: #56c36f 0% 0% no-repeat padding-box;
+      border-radius: 24px;
+      border: 1px solid transparent;
+      padding: 6px 50px;
+      i {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+.color_g {
+  color: #56c36f;
+}
+.border_img {
+  border: 4px solid #56c36f;
+}
+@media (max-width: 1024px) {
+  .Register_slt_B2B {
+    .Register_slt_B2B_business_img,
+    .Register_slt_B2B_home_img {
+      width: 284px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Register_slt_B2B {
+    .Register_slt_B2B_business_img,
+    .Register_slt_B2B_home_img {
+      width: 150px;
+    }
+  }
+}
+@media (max-width: 475px) {
+  .Register_slt_B2B {
+    .Register_slt_B2B_business_img,
+    .Register_slt_B2B_home_img {
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,214 @@
+$seafoam: #37bfa7;
+.minicard {
+  background-color: white;
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+
+  .minicard__ToastContainer {
+    z-index: 101;
+  }
+  .Toastify__toast-container--top-right {
+    top: 0em;
+    right: 0em;
+    width: auto;
+  }
+
+  .alertmodal {
+    width: 30%;
+    height: 40%;
+  }
+  .login__alertmodal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .modal__login {
+      background: $seafoam;
+      border: 1px solid $seafoam;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 18px 70px;
+    }
+    .modal__icon {
+      margin-bottom: 30px;
+      font-size: 45px;
+    }
+  }
+  .minicard_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+
+    .minicard__quantity {
+      display: flex;
+      align-items: center;
+      input {
+        max-width: 4em;
+        border: none;
+        outline: none;
+        text-align: center;
+      }
+
+      button {
+        padding: 0.5em;
+      }
+
+      button.miniCard__subtract {
+        height: 1.25em;
+        width: 2em;
+        border-radius: 8px;
+        position: relative;
+        border: none;
+        background-position: center;
+        transition: background 0.8s !important;
+        &::before {
+          content: "";
+          position: absolute;
+          border-top: 2px solid gray;
+          width: 10px;
+          bottom: 9px;
+          right: 10px;
+        }
+        &:active {
+          background-color: $seafoam;
+          background-size: 100%;
+          transition: background 4s;
+
+          &::before {
+            border-top: 2px solid white;
+          }
+        }
+      }
+
+      button.miniCard__add {
+        width: 2em;
+        background-color: $seafoam;
+        color: white;
+        border: 2px solid $seafoam;
+        border-radius: 8px;
+        position: relative;
+        background-position: center;
+        transition: background 0.8s !important;
+
+        &::before {
+          content: "";
+          position: absolute;
+          border-top: 2px solid white;
+          width: 10px;
+          height: 10px;
+          left: 9px;
+          top: 7px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          border-right: 2px solid white;
+          width: 10px;
+          height: 10px;
+          bottom: 3px;
+          right: 13px;
+        }
+        &:active {
+          background-color: white;
+          background-size: 100%;
+          transition: background 4s;
+
+          &::before {
+            border-top: 2px solid $seafoam;
+          }
+
+          &::after {
+            border-right: 2px solid $seafoam;
+          }
+        }
+      }
+    }
+
+    .minicard__units {
+      display: flex;
+
+      p {
+        background-color: #f3f3f3;
+        padding: 3px 1em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        margin: 0;
+
+        &:first-child {
+          border-top-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+        }
+        &:last-child {
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+      }
+
+      .minicard__unitSelected {
+        background-color: $seafoam;
+        color: white;
+      }
+    }
+  }
+
+  .minicard__addtocart {
+    margin-top: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    button {
+      outline: none;
+      border: none;
+      background-color: $seafoam;
+      color: white;
+      width: 100%;
+      border-radius: 8px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 12px;
+      padding: 0.5em;
+      cursor: pointer;
+      background-position: center;
+      transition: background 0.8s !important;
+      &:active {
+        background-color: white;
+        background-size: 100%;
+        transition: background 4s;
+        color: $seafoam;
+        border: 1px solid $seafoam;
+
+        &::before {
+          color: $seafoam;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      background-image: url("../../assets/images/cart.svg");
+      position: absolute;
+      left: 1.5em;
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .minicard .minicard_container {
+    gap: 4px;
+  }
+}

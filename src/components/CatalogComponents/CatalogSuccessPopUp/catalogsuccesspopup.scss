@@ -1,0 +1,20 @@
+$seafoam: #37bfa7;
+.catalog__modal {
+  width: 25% !important;
+  .catalog__modal__body {
+    max-height: 380px;
+    padding: 1rem !important;
+    i,
+    h3 {
+      color: $seafoam;
+    }
+    .suceesbutton {
+      border: 1px solid $seafoam !important;
+      background: #3ab67d26 0% 0% no-repeat padding-box !important;
+      border: 1px solid $seafoam !important;
+      color: $seafoam !important ;
+
+      border-radius: 25px !important;
+    }
+  }
+}

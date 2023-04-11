@@ -1,0 +1,177 @@
+.contentcard {
+  $seafoam: #37bfa7;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 1em;
+  padding: 1em;
+  border: 1px solid #dcdbdb;
+  border-radius: 20px;
+  max-height: 140px;
+
+  .card__left {
+    .date {
+      color: #0d83e5;
+      font: 18px;
+      font-weight: 400;
+    }
+
+    .label {
+      font-weight: 500;
+    }
+
+    .overduecolor {
+      color: #d03030;
+    }
+
+    .invoicelist {
+      position: relative;
+
+      .label {
+        cursor: pointer;
+      }
+
+      .openlist {
+        text-decoration: underline;
+        color: $seafoam;
+        cursor: pointer;
+      }
+
+      .hidelist {
+        display: none;
+      }
+
+      .showlist {
+        display: block;
+        list-style: none;
+        padding: 0;
+        border: 1px solid $seafoam;
+        padding: 10px;
+        box-shadow: 0px 3px 6px #00000029;
+        background-color: #fff;
+        border-radius: 20px;
+        width: max-content;
+        position: absolute;
+      }
+    }
+  }
+
+  .card__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+    }
+
+    .paybill {
+      background-color: #fdc156;
+      border-radius: 8px;
+      box-shadow: 0px 3px 6px #00000029;
+      color: #2b2b2b;
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+      padding: 0.7em 1.2em;
+      cursor: pointer;
+      font-weight: 500;
+      display: block;
+      width: 150px;
+    }
+    p {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      justify-content: flex-end;
+
+      .paybill {
+        background-color: #fdc156;
+        border-radius: 8px;
+        box-shadow: 0px 3px 6px #00000029;
+        color: #2b2b2b;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+        padding: 0.7em 1.2em;
+        cursor: pointer;
+        font-weight: 500;
+        width: 150px;
+      }
+
+      .overdue {
+        background-color: #d03030;
+        border-radius: 8px;
+        box-shadow: 0px 3px 6px #00000029;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+        padding: 0.7em 1.2em;
+        cursor: pointer;
+        font-weight: 500;
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .contentcard {
+    margin: 0 0 1em;
+    gap: 10px;
+    flex: 1;
+
+    .card__right {
+      flex-direction: column-reverse;
+
+      p {
+        flex-direction: row;
+      }
+    }
+
+    .card__left,
+    .card__right {
+      p {
+        margin: 0;
+        span {
+          font-size: 14px;
+        }
+      }
+
+      .paybill,
+      .overdue {
+        width: 100px;
+        height: 40px;
+      }
+    }
+
+    .moboverdue {
+      position: relative;
+
+      .paybill {
+        width: 100px !important;
+        height: 40px;
+      }
+
+      .overdue {
+        position: absolute;
+        font-size: 11px !important;
+        height: 16px;
+        width: 80px !important;
+        height: 20px;
+        padding: 1.5px !important;
+        right: 9.5em;
+        top: 0px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 480px) {
+  .contentcard__mob__date {
+    display:grid;
+  }
+}

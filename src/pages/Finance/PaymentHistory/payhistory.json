@@ -1,0 +1,84 @@
+{
+  "payhistory": [
+    {
+      "paymentid": "SAFOJ036000",
+      "invoiceid": "IN6403036098",
+      "amount": "25000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "CASH",
+      "status": "Paid",
+      "overdue": "false"
+    },
+    {
+      "paymentid": "",
+      "invoiceid": "IN6403036000",
+      "amount": "29000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "1/Oct/2022",
+      "paymethod": "CASH",
+      "status": "UnPaid",
+      "overdue": "true"
+    },
+    {
+      "paymentid": "",
+      "invoiceid": "IN6403036012",
+      "amount": "5000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "Credit",
+      "status": "Cancelled",
+      "overdue": "false"
+    },
+    {
+      "paymentid": "SAFOJ036003",
+      "invoiceid": "",
+      "amount": "25000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "CASH",
+      "status": "Paid",
+      "overdue": "false"
+    },
+    {
+      "paymentid": "SAFOJ036004",
+      "invoiceid": "",
+      "amount": "25000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "Credit",
+      "status": "UnPaid",
+      "overdue": "true"
+    },
+    {
+      "paymentid": "SAFOJ036005",
+      "invoiceid": "",
+      "amount": "25000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "CASH",
+      "status": "Paid",
+      "overdue": "false"
+    },
+    {
+      "paymentid": "SAFOJ036006",
+      "invoiceid": "",
+      "amount": "25000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "CASH",
+      "status": "Paid",
+      "overdue": "false"
+    },
+    {
+      "paymentid": "SAFOJ036007",
+      "invoiceid": "",
+      "amount": "25000",
+      "billto": "Louise Coffee Ekamai",
+      "duedate": "15/Sep/2022",
+      "paymethod": "CASH",
+      "status": "Paid",
+      "overdue": "false"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+$seafoam: #37bfa7;
+.orderlist__add__option {
+  justify-content: center;
+
+  .order__quantity {
+    max-width: 4em;
+    text-align: center;
+    margin: 0 auto;
+    input {
+      background-color: unset;
+      width: 100%;
+    }
+    .order__subtract {
+      border: 1px solid gray;
+      padding: 2px 15px;
+      margin-right: 5px;
+    }
+    .order__add {
+      border: 1px solid $seafoam;
+
+      padding: 2px 15px;
+      background-color: $seafoam;
+      color: white;
+    }
+  }
+}
+.incrementoptions__spinner {
+  .spinner-grow {
+    color: $seafoam;
+  }
+}
+
+@media (max-width: 912px) {
+  .orderlist__add__option .order__quantity .order__subtract,
+  .orderlist__add__option .order__quantity .order__add {
+    padding: 2px 10px;
+  }
+}

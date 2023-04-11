@@ -1,0 +1,313 @@
+$seafoam: #37bfa7;
+$gray: #d3d3d3;
+@mixin circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 1px 7px;
+  text-align: center;
+}
+@mixin line {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+.registerB2BUploadDocumentSuccess {
+  background-color: white;
+  min-height: 100vh;
+  .Register_b2b_slt_top_section {
+    .Register_b2b_slt_top_section_span_1 {
+      color: $seafoam;
+      font-size: 12px;
+    }
+    .Register_b2b_slt_top_section_span_2 {
+      color: $gray;
+      font-size: 12px;
+    }
+  }
+  .Register_b2b_slt_topic {
+    .Register_b2b_slt_topic_steps {
+      padding: 30px 0px;
+      .Register_b2b_slt_topic__business {
+        position: relative;
+        left: 45px;
+        padding-left: 10px;
+        p {
+          color: $seafoam;
+          font-weight: 600;
+        }
+        &:after {
+          @include line;
+          background: $seafoam;
+          margin-left: -47px;
+        }
+        .Register_b2b_slt_topic__business_circle {
+          @include circle;
+          border: 3px solid $seafoam;
+          color: $seafoam;
+          padding: 1px 9px;
+        }
+      }
+      .Register_b2b_slt_topic_categery {
+        position: relative;
+        left: 4px;
+        p {
+          color: $seafoam;
+          font-weight: 600;
+        }
+        &:after {
+          @include line;
+          background: $seafoam;
+          margin-left: -45px;
+        }
+        .Register_b2b_slt_topic_categery_circle {
+          @include circle;
+          color: $seafoam;
+          border: 3px solid $seafoam;
+          padding: 1px 7px;
+        }
+      }
+      .Register_b2b_slt_topic_adddocument {
+        position: relative;
+        right: 30px;
+        p {
+          color: $seafoam;
+          font-weight: 600;
+        }
+        .Register_b2b_slt_topic_addbocument_circle {
+          @include circle;
+          color: $seafoam;
+          border: 3px solid $seafoam;
+          padding: 1px 7px;
+        }
+      }
+
+      .top_favorite_categories {
+        .top_categories_container {
+          max-width: 700px;
+          .top_categories_item {
+            .b2b_top_categories_item_img {
+              border-radius: 20px;
+              width: 125px;
+              height: 100px !important;
+            }
+            .top_categories_name {
+              position: absolute;
+              bottom: 4px;
+              left: 33px;
+              color: white;
+              font-size: 10px;
+              font-weight: 900;
+            }
+          }
+        }
+      }
+    }
+  }
+  .registerB2BUploadDocumentSuccess_top_section {
+    display: flex;
+    justify-content: space-between;
+    .registerB2BUploadDocumentSuccess_top_section_span_1 {
+      color: #9caba2;
+      font-size: 16px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      cursor: pointer;
+      span {
+        text-decoration: underline;
+        color: $seafoam;
+      }
+    }
+    .registerB2BUploadDocumentSuccess_top_section_span_2 {
+      color: #d3d3d3;
+      font-size: 16px;
+    }
+  }
+  .registerB2BUploadDocumentSuccess_uploade_div {
+    margin-bottom: 80px;
+    .registerB2BUploadDocumentSuccess_uploade_feelds {
+      background: #f4f6e9 0% 0% no-repeat padding-box;
+      border-radius: 20px;
+      padding: 30px;
+      width: 60%;
+      margin: auto;
+      .registerB2BUploadDocumentSuccess_uploade_drag_top {
+        p {
+          color: $seafoam;
+          font-weight: 600;
+        }
+      }
+      .registerB2BUploadDocumentSuccess_uploade_drag {
+        padding: 8px;
+        border-radius: 35px;
+        .registerB2BUploadDocumentSuccess_topic_file-drop-area {
+          justify-content: space-between;
+          padding: 5px 20px;
+          text-align: center;
+          border-radius: 20px;
+          background: $seafoam;
+          border: 2px $seafoam;
+          align-items: center;
+          div {
+            align-items: center;
+          }
+        }
+        .registerB2BUploadDocumentSuccess_topic_file-drop-area_text {
+          padding-left: 10px;
+          text-align: initial;
+        }
+      }
+    }
+  }
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    .jagota_footer-link {
+      padding: 40px;
+      color: gray;
+    }
+    .footer_button {
+      background-color: $seafoam;
+      color: white;
+      padding: 25px 50px;
+      border-radius: 0px;
+
+      .bg-green {
+        background-color: $seafoam !important;
+      }
+      .bg-gray {
+        background-color: #d3d3d3;
+      }
+      .footer_button_icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+.padding_top_50 {
+  padding-top: 10px;
+}
+.color_g {
+  color: $seafoam;
+  font-size: 25px;
+}
+
+@media (max-width: 1024px) {
+  .registerB2BUploadDocumentSuccess {
+    .registerB2BUploadDocumentSuccess_uploade_div {
+      padding-top: 10px;
+      .registerB2BUploadDocumentSuccess_uploade_feelds {
+        width: 80%;
+
+        .registerB2BUploadDocumentSuccess_uploade_drag_top {
+          p {
+            color: $seafoam;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .registerB2BUploadDocumentSuccess {
+    .registerB2BUploadDocumentSuccess_uploade_div {
+      padding-top: 10px;
+
+      .registerB2BUploadDocumentSuccess_uploade_feelds {
+        width: 90%;
+
+        .registerB2BUploadDocumentSuccess_uploade_drag_top {
+          p {
+            color: $seafoam;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .registerB2BUploadDocumentSuccess {
+    .registerB2BUploadDocumentSuccess_uploade_div {
+      h5 {
+        font-size: 20px;
+        padding: 0;
+      }
+      padding-top: 10px;
+
+      .registerB2BUploadDocumentSuccess_uploade_feelds {
+        width: 100%;
+
+        .registerB2BUploadDocumentSuccess_uploade_drag_top {
+          p {
+            color: $seafoam;
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  .registerB2BUploadDocumentSuccess
+    .registerB2BUploadDocumentSuccess_top_section
+    .registerB2BUploadDocumentSuccess_top_section_span_1
+    span,
+  .registerB2BUploadDocumentSuccess
+    .registerB2BUploadDocumentSuccess_top_section
+    .registerB2BUploadDocumentSuccess_top_section_span_2,
+  .registerB2BUploadTopic_top_section_span_1,
+  .registerB2BUploadTopic_top_section_span_2 {
+    font-size: 12px !important;
+  }
+
+  .registerB2BUploadDocumentSuccess
+    .Register_b2b_slt_topic
+    .Register_b2b_slt_topic_steps
+    .Register_b2b_slt_topic__business:after,
+  .registerB2BUploadDocumentSuccess
+    .Register_b2b_slt_topic
+    .Register_b2b_slt_topic_steps
+    .Register_b2b_slt_topic_categery:after {
+    width: 120px;
+  }
+
+  .registerB2BUploadDocumentSuccess
+    .Register_b2b_slt_topic
+    .Register_b2b_slt_topic_steps
+    .Register_b2b_slt_topic_adddocument {
+    right: 13px;
+  }
+
+  .registerB2BUploadDocumentSuccess
+    .Register_b2b_slt_topic
+    .Register_b2b_slt_topic_steps
+    .Register_b2b_slt_topic_categery:after {
+    margin-left: -20px;
+  }
+
+  .Register_b2b_slt_topic_steps {
+    margin-left: -1.5em;
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .registerB2BUploadDocumentSuccess
+    .Register_b2b_slt_topic
+    .Register_b2b_slt_topic_steps
+    .Register_b2b_slt_topic__business {
+    left: 22px;
+
+    &::after {
+      margin-left: -26px;
+    }
+  }
+}

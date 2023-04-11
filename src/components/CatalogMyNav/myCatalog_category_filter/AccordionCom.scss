@@ -1,0 +1,249 @@
+$seafoam: #37bfa7;
+.accordion-item > .accordion-header  {
+  font-size: 25px !important;
+  border-left: none !important;
+  color: $seafoam !important;
+}
+.accordion-item {
+    background: #f3f3f380 0% 0% no-repeat padding-box;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    .accordion-header {
+      padding: 10px;
+    }
+    .AC__Clear {
+      margin-left: 1em;
+      border: 1ps solid $seafoam;
+      color: $seafoam;
+      cursor: pointer;
+      border-radius: 7px;
+      padding: 1px 8px;
+    }
+    .accordion-body {
+      padding: 0 !important;
+    }
+    .accordion-button {
+      background: #f3f3f380 0% 0% no-repeat padding-box;
+      border-radius: 10px 10px 10px 10px;
+      border: none;
+      box-shadow: none;
+    }
+    .accordion-button:not(.collapsed) {
+      color: black;
+      font-size: 17px;
+  
+      // color: $seafoam;
+      // background: #f3f3f380 0% 0% no-repeat padding-box;
+  
+      // border-radius: 10px 10px 10px 10px;
+
+      //new added
+      // background:#f0faf8 ;
+      // color: $seafoam;
+      // border-left: 5px solid $seafoam;
+      
+       
+    }
+  
+    .accordion-button.collapsed {
+      border-radius: 10px 10px 10px 10px;
+    }
+  }
+  // .accordion-button:not(.collapsed)::after{
+  //   color: $seafoam;
+  // }
+//   .accordion-button{
+//     background-image:url(
+//   "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'    fill='%2337bfa7'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+//   ) !important
+// }
+  
+
+  .listing_type input[type=radio]:checked ~ .listing_type { background: green;border-left: 5px solid $seafoam; }
+  // .form-check-input:checked[type=checkbox]{
+  //   background-color: #37bfa7;
+  // }
+
+//   .accordion-button{
+//   &::after {
+//     // margin-left: 0%;
+//     // background-color: #37bfa7;
+//   }
+// }
+
+
+
+.accordion-button::after{
+background-image:url(
+  "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'    fill='%2337bfa7'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"
+  ) !important
+}
+  .discount_tab {
+    padding-bottom: 13px;
+    max-height: 400px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+      // background-color: #f3f3f3;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color:$seafoam;
+      outline: 1px solid white;
+      
+    }
+  }
+  .discounttab {
+    height: 126px;
+    position: relative;
+    .price_min {
+      background: #ffff;
+      position: absolute;
+      bottom: 8px;
+      padding: 3px;
+      box-shadow: 2px 2px 2px #2754aa26;
+      border: 1px solid #f3f3f3;
+      border-radius: 7px;
+      color: #aaaaaa;
+    }
+    .price_max {
+      background: #ffff;
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      padding: 3px;
+      box-shadow: 2px 2px 2px #2754aa26;
+      border: 1px solid #f3f3f3;
+      border-radius: 7px;
+      color: #aaaaaa;
+    }
+    .price_input {
+      margin: 0px 28px 0px 15px;
+      padding: 34px 0px 0px 0px;
+    }
+    .input-range__label--max,
+    .input-range__label--min {
+      .input-range__label-container {
+        background: none;
+        box-shadow: none;
+        border: none;
+        border-radius: 0px;
+      }
+    }
+    .input-range__label-container {
+      background: #ffff;
+      padding: 3px;
+      box-shadow: 2px 2px 2px #2754aa26;
+      border: 1px solid #f3f3f3;
+      border-radius: 7px;
+    }
+    .input-range__slider {
+      background-color: #2b2b2b;
+      -webkit-appearance: none;
+      appearance: none;
+      border: 1px solid #2b2b2b;
+      border-radius: 100%;
+      cursor: pointer;
+      display: block;
+      height: 11px;
+      margin-left: -0.5rem;
+      margin-top: -0.45rem;
+      outline: none;
+      position: absolute;
+      top: 77%;
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+      width: 11px;
+    }
+    .input-range__track {
+      border-radius: 0.3rem;
+      cursor: pointer;
+      display: block;
+      height: 0.1rem;
+      position: relative;
+      transition: left 0.3s ease-out, width 0.3s ease-out;
+    }
+    .input-range__track--active {
+      background-color: #2b2b2b;
+    }
+  }
+  .listing_type {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 10px 10px 10px;
+    // display: block;
+ display: flex;
+ flex-wrap: wrap;
+    gap: 5px;
+    // margin: 0 6%;
+    align-items: center;
+    input {
+      margin: 0;
+      width: 20px;
+      height: 20px;
+      background: #F2F2F2 0% 0% no-repeat padding-box;
+border: 1px solid #D3D3D3;
+border-radius: 3px;
+opacity: 1;
+    }
+    i {
+      color: #f9bf23;
+      padding-top: 3px;
+      padding-left: 2px;
+    }
+  }
+  p {
+    padding-bottom: 10px;
+    // margin-left: 12px;
+    margin-bottom: 0px;
+  }
+
+
+  // new
+  .listing_type > input[type=radio] {
+    appearance: none;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    display: inline-grid;
+    place-content: center; 
+  }
+
+  .listing_type:has(input:checked){
+    background: #F0FAF8 0% 0% no-repeat padding-box;
+    border-top: 0.5px solid #D7D7D7;
+    border-bottom: 0.5px solid #D7D7D7;
+    // background-color: #F0FAF8 0% 0% no-repeat padding-box;
+    border-left: 5px solid #37bfa7;
+
+  }
+
+  .listing_type > input[type=radio]::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    transform: scale(0);
+    transform-origin: bottom left;
+    background-color: #fff;
+    clip-path: polygon(13% 50%, 34% 66%, 81% 2%, 100% 18%, 39% 100%, 0 71%);
+    
+}
+
+
+
+.listing_type > input[type=radio]:checked::before {
+    transform: scale(1);
+  
+}
+.listing_type > input[type=radio]:checked{
+    background-color:   #0075FF;
+    border: 2px solid #0075FF;
+}
+
+.form-check-input:checked[type=radio]{
+  background-image: none;
+}

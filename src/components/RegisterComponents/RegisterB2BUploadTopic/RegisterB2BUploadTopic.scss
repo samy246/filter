@@ -1,0 +1,292 @@
+$seafoam: #37bfa7;
+$gray: #d3d3d3;
+.gray {
+  color: #d3d3d3;
+}
+.green {
+  color: $seafoam;
+}
+@mixin circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+@mixin line {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+.m {
+  margin: 11px;
+}
+.registerB2BUploadTopic {
+  background-color: white;
+  .registerB2BUploadTopic_top_section {
+    display: flex;
+    justify-content: space-between;
+    .registerB2BUploadTopic_top_section_span_1 {
+      color: #9caba2;
+      font-size: 16px;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      cursor: pointer;
+      span {
+        text-decoration: underline;
+        color: $seafoam;
+      }
+    }
+    .registerB2BUploadTopic_top_section_span_2 {
+      color: $gray;
+      font-size: 16px;
+    }
+  }
+  .registerB2BUploadTopic_topic {
+    .registerB2BUploadTopic_topic_steps {
+      padding: 30px 0px;
+      margin-left: -5em;
+      .registerB2BUploadTopic_topic__business {
+        position: relative;
+        left: 95px;
+        p {
+          font-weight: 600;
+        }
+        &:after {
+          @include line;
+          background: $seafoam;
+          margin-left: -45px;
+          transition: all 0.2s ease-in-out;
+        }
+        .registerB2BUploadTopic_topic__business_circle {
+          @include circle;
+          padding: 1px 9px;
+          border: 3px solid $seafoam;
+          color: $seafoam;
+        }
+      }
+      .registerB2BUploadTopic_topic_categery {
+        position: relative;
+        left: 53px;
+        p {
+          font-weight: 600;
+        }
+        &:after {
+          @include line;
+          background: $seafoam;
+          margin-left: -45px;
+          transition: all 0.2s ease-in-out;
+        }
+        .registerB2BUploadTopic_topic_categery_circle {
+          @include circle;
+          color: $seafoam;
+          border: 3px solid $seafoam;
+          padding: 1px 7px;
+        }
+      }
+      .registerB2BUploadTopic_topic_adddocument {
+        position: relative;
+        right: -15px;
+        p {
+          font-weight: 600;
+        }
+        .registerB2BUploadTopic_topic_addbocument_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+        }
+      }
+    }
+  }
+  .head {
+    color: $seafoam;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+  .shoping__list {
+    margin: 20px 0px;
+    font-weight: 500;
+    color: #858585;
+  }
+  .top_favorite_categories {
+    margin-bottom: 85px;
+    .top_categories_container {
+      max-width: 700px;
+      .top_categories_items {
+        display: grid;
+        grid-template-columns: repeat(5, 0fr);
+        grid-gap: 10px;
+        margin-bottom: 35px;
+      }
+      .categories__item__check {
+        position: relative;
+        right: -15px;
+        top: 9px;
+      }
+      .categories__item__check__box {
+        position: absolute;
+        left: 9px;
+        top: 9px;
+      }
+      .top_categories_item_img {
+        border-radius: 20px;
+        width: 125px;
+        height: 100px;
+        opacity: 0.7;
+      }
+      .text {
+        padding-left: 10px;
+        text-align: initial;
+      }
+
+      .top_categories_name {
+        position: absolute;
+        bottom: 4px;
+        left: 10px;
+        right: 10px;
+        text-align: center;
+        p {
+          color: #ffffff;
+          font-size: 12px;
+          font-weight: bold;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .uploade_drag {
+    border-radius: 35px;
+    padding: 15px;
+    background: #f4f6e9;
+    border-radius: 35px;
+    width: 100%;
+    .topic_file-drop-area {
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 20px;
+      background: $seafoam;
+      border: 2px $seafoam;
+      align-items: center;
+    }
+  }
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    // display: grid;
+    width: 100%;
+    // grid-template-columns: repeat(2, 50%);
+    .jagota_footer-link {
+      padding: 40px;
+      color: #858585;
+      text-align: center;
+    }
+    .footer_button {
+      background-color: $seafoam;
+      font-weight: 600;
+      color: white;
+      padding: 25px 50px;
+      border-radius: 0px;
+
+      .bg-green {
+        background-color: $seafoam !important;
+      }
+      .bg-gray {
+        background-color: #d3d3d3;
+      }
+      .footer_button_icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .registerB2BUploadTopic
+    .top_favorite_categories
+    .top_categories_container
+    .top_categories_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 35px;
+  }
+  .registerB2BUploadTopic_top_section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .registerB2BUploadTopic {
+    .registerB2BUploadTopic_topic {
+      .registerB2BUploadTopic_topic_steps {
+        .registerB2BUploadTopic_topic__business {
+          left: 29px;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+
+          .registerB2BUploadTopic_topic__business_para {
+            font-size: 12px;
+          }
+        }
+        .registerB2BUploadTopic_topic_categery {
+          left: 10px;
+
+          &:after {
+            width: 83px;
+
+            margin-left: -20px;
+          }
+
+          .registerB2BUploadTopic_topic__category_para {
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+        .registerB2BUploadTopic_topic_adddocument {
+          right: 7px;
+
+          .registerB2BUploadTopic_topic__adddocument_para {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .top_favorite_categories {
+      .top_categories_item_img {
+        width: 100px !important;
+        height: 80px !important;
+      }
+    }
+  }
+  .registerB2BUploadTopic
+    .registerB2BUploadTopic_topic
+    .registerB2BUploadTopic_topic_steps {
+    padding: 24px 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .registerB2BUploadTopic
+    .top_favorite_categories
+    .top_categories_container
+    .top_categories_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .registerB2BUploadTopic
+    .top_favorite_categories
+    .top_categories_container
+    .categories__item__check__box {
+    left: 0;
+  }
+}

@@ -1,0 +1,123 @@
+$seafoam: #37bfa7;
+.wishlistpopup__body {
+  padding: 22px 10px;
+
+  .centertext {
+    text-align: center;
+  }
+}
+.usersetup__admin__card {
+  max-width: 345px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  .hr {
+    padding: 10px 0px 0px 10px;
+    color: #858585;
+  }
+  .usersetup__admin__card__head {
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px 0px 10px;
+
+    .admin__img {
+      height: 50px;
+      width: 50px;
+      img {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .admin__details {
+      width: 200px;
+      p {
+        font-size: 14px;
+        margin-bottom: 4px;
+        width: 15rem;
+        color: #858585;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        span:first-child {
+          width: 50px;
+        }
+      }
+    }
+    .admin__status p {
+      margin: 0px;
+      border: 1px solid $seafoam;
+      background-color: #e6f6ea;
+      color: $seafoam;
+      padding: 3px 10px;
+      border-radius: 11px;
+      font-size: 10px;
+      width: max-content;
+    }
+  }
+  .usersetup__admin__card__body {
+    display: grid;
+    padding: 10px 0px 0px 70px;
+
+    p {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #858585;
+    }
+  }
+  .usersetup__admin__card__footer {
+    background-color: #d3d3d326;
+    .footer__card {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px;
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        .icon {
+          font-size: 16px;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+  .pencilicon {
+    display: flex;
+    gap: 20px;
+  }
+}
+.modal-90w {
+  max-width: 25% !important;
+}
+.modal-content {
+  border-radius: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .modal-90w {
+    max-width: 35% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-90w {
+    max-width: 50% !important;
+  }
+
+  .modal-content {
+    margin-top: 25vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-90w {
+    max-width: 100% !important;
+  }
+
+  .modal-content {
+    margin-top: 22vh;
+  }
+}

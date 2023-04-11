@@ -1,0 +1,187 @@
+$seafoam: #37bfa7;
+.Main_div_seafood {
+  max-width: 1440px;
+  margin: 0 auto;
+  & > * {
+    margin: 2em 0;
+  }
+}
+
+.mycatalogs {
+  border-radius: 10px;
+}
+
+.catalog_header {
+  background-color: whitesmoke;
+  padding: 2em 3% !important;
+  margin: 0;
+
+  .catalog_header__menu {
+    box-shadow: none !important;
+  }
+}
+.catalog__cardCount {
+  display: flex;
+  align-items: center;
+
+  .catalog__cardCount__cat {
+    font-weight: 600;
+    font-size: 24px;
+    color: #2b2b2b;
+    flex: 1;
+    text-align: center;
+  }
+
+  .breadcrumb {
+    padding-left: 24px;
+    .breadcrumb-item + .breadcrumb-item::before {
+      content: unset !important;
+    }
+    .arrow {
+      position: relative;
+      padding-right: 1em;
+
+      &::after {
+        position: absolute;
+        content: "";
+        border-top: 2px solid #858585;
+        border-right: 2px solid #858585;
+        width: 8px;
+        height: 8px;
+        transform: rotate(45deg);
+        top: 8.5px;
+        right: 5px;
+      }
+    }
+  }
+}
+.seafood_section {
+  display: none;
+  // display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2b2b;
+  }
+  span {
+    a {
+      background: none;
+      font-size: 14px;
+    }
+  }
+  .product__back {
+    span {
+      text-decoration: underline;
+      margin-left: 1em;
+      cursor: pointer;
+    }
+  }
+}
+
+.breadcrumb {
+  margin-top: 20px;
+  // width: max-content;
+  font-size: 14px;
+  .Main_div_seafood_home,
+  .Main_div_seafood_mycatalog {
+    color: #858585;
+  }
+  .Main_div_seafood_mycatalog {
+    text-decoration: none;
+  }
+  .link_active {
+    color: $seafoam;
+    font-weight: 600;
+  }
+}
+.my_catalog_section {
+  display: flex;
+  grid-gap: 15px;
+  .myCatalog_category_filter_container {
+    box-shadow: 0 1px 4px #7f7f7f1c;
+  }
+}
+
+.my_catalog_section_col_1 {
+  width: 20% !important;
+}
+.my_catalog_section_col_2 {
+  width: 80%;
+}
+
+@media (max-width: 1440px) {
+  .Main_div_seafood {
+    & > * {
+      margin: 2em 1%;
+    }
+    .catalog_header {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 1368px) {
+  .my_catalog_section_col_1 {
+    width: 15em !important;
+  }
+
+  .my_catalog_section {
+    gap: 6px !important;
+  }
+
+  .Main_div_seafood .product_card_carousel {
+    margin: 2em 1% !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .my_catalog_section_col_1 {
+    width: 100% !important;
+  }
+
+  .catalogheader__productCard {
+    padding: 0 !important;
+    .catalogblockmini__title {
+      display: none;
+    }
+    .catalogblockmini__container {
+      & > img {
+        display: none;
+      }
+
+    }
+    .PMini__seemore {
+      display: none;
+    }
+  }
+  .Main_div_seafood {
+    margin: 1em 3%;
+    .catalog_header {
+      margin: 0 -3%;
+    }
+    .my_catalog_section {
+      display: block;
+      margin: 2em 0 !important;
+    }
+  }
+  .seafood_section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .breadcrumb {
+    width: 100%;
+  }
+  .catalog__cardCount {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 540px) {
+  .my_catalog_section_col_2 {
+    width: unset !important;
+  }
+}

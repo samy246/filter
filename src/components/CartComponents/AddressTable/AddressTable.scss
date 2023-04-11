@@ -1,0 +1,94 @@
+#address__table > .slick-slider {
+  height: 100px;
+  z-index: 999;
+}
+@mixin base {
+  padding: 10px 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap: 10px;
+  margin: 10px;
+  background-color: white;
+  padding: 10px 32px 10px 10px;
+  border-radius: 12px;
+  .addresstable__checkbox__width {
+    padding: 8px !important;
+    margin-top: 10px !important;
+  }
+  .testin_table {
+    cursor: pointer;
+    flex: 1;
+    .gray__color {
+      color: #858585;
+      font-size: 8px;
+    }
+    p {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9px;
+      margin: 0;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      width: 100%;
+    }
+
+    hr {
+      margin: 1px 0;
+    }
+
+    .label {
+      font-size: 13px;
+      color: #858585;
+      font-weight: 500;
+    }
+
+    .value {
+      font-size: 16px;
+      color: #2b2b2b;
+      font-weight: 500;
+    }
+
+    .lastvalue {
+      padding-bottom: 10px;
+    }
+  }
+}
+.addresstablenotopen {
+  @include base();
+  overflow: hidden;
+  height: 4.2em;
+  label {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+.addresstable {
+  @include base();
+  height: auto;
+  label {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0em;
+    transition: height 2s ease-in-out;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .address__table {
+    .testin_table {
+      p.customwidth__90,
+      hr {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .address__table {
+    justify-content: center;
+  }
+}

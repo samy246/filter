@@ -1,0 +1,118 @@
+$seafoam: #37bfa7;
+.react-responsive-modal-modal {
+  max-width: 100% !important;
+
+  .tableskeleton__reviewform,
+  h2 {
+    padding: 20px;
+  }
+
+  .tableskeleton__reviewform input {
+    margin-bottom: 10px;
+  }
+}
+
+.tableskeleton {
+  .orderstatus__img {
+    img {
+      width: 7em;
+      object-fit: contain;
+    }
+  }
+  p.orderstatus_dropdown_close {
+    font-size: 13px;
+    margin: 0;
+    position: relative;
+    color: #2b2b2b;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+
+    &::after {
+      content: "";
+      border-right: 3px solid $seafoam;
+      border-bottom: 3px solid $seafoam;
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      right: 12px;
+      top: 0;
+      bottom: 0;
+      transform: rotate(45deg);
+      transition: transform 500ms;
+    }
+  }
+
+  p.orderstatus_dropdown_open {
+    font-size: 13px;
+    margin: 0;
+    position: relative;
+    color: #2b2b2b;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      border-right: 3px solid $seafoam;
+      border-bottom: 3px solid $seafoam;
+      height: 12px;
+      width: 12px;
+      position: absolute;
+      right: 12px;
+      top: 0;
+      bottom: 0;
+      transform: rotate(225deg);
+    }
+  }
+
+  p.tableskeleton__norecord {
+    padding: 14px;
+  }
+
+  i {
+    background-color: $seafoam;
+    padding: 8.5px;
+    border-radius: 100%;
+    cursor: pointer;
+
+    &::before {
+      color: white;
+    }
+  }
+}
+
+.react-responsive-modal-modal {
+  max-height: 50vh;
+  text-align: center;
+
+  .orderstatus__submit {
+    color: white;
+    background-color: $seafoam;
+    padding: 0.5em 1.2em;
+    border: 1px solid $seafoam;
+    border-radius: 20px;
+    width: max-content;
+    display: flex;
+    cursor: pointer;
+  }
+
+  input,
+  textarea {
+    border: 1px solid #858585;
+    border-radius: 8px;
+    width: 100%;
+    padding-left: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  span {
+    margin: 0;
+  }
+
+  svg {
+    padding: 0 !important;
+    color: unset !important;
+    background-color: white !important;
+  }
+}

@@ -1,0 +1,148 @@
+$seafoam: #37bfa7;
+.remaining {
+  display: grid;
+  cursor: pointer;
+  .remaining__hrline {
+    margin: 0% 0% 0% 20%;
+  }
+  .remaining__text {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .remaining__content {
+    .remaining__pending {
+      color: #858585;
+    }
+    h4 {
+      color: $seafoam;
+      font-size: 14px;
+      font-weight: 600 !important;
+    }
+    p {
+      font-size: 10px;
+      margin-bottom: 10px;
+
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    p span.remaining__orderlabel,
+    p span.remaining__ordervalue,
+    p span.remaining__polabel,
+    p span.remaining__povalue {
+      font-weight: 500;
+      color: #858585;
+    }
+
+    p span.selected__orderlabel,
+    p span.selected__ordervalue,
+    p span.selected__polabel,
+    p span.selected__povalue {
+      font-weight: 500;
+      color: #2b2b2b;
+    }
+  }
+
+  .selected__content {
+    h4 {
+      color: #858585;
+      font-size: 14px;
+      font-weight: 600 !important;
+    }
+
+    p {
+      font-size: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    p span.remaining__orderlabel,
+    p span.remaining__ordervalue,
+    p span.remaining__polabel,
+    p span.remaining__povalue {
+      font-weight: 500;
+      color: #858585;
+    }
+
+    p span.selected__orderlabel,
+    p span.selected__ordervalue,
+    p span.selected__polabel,
+    p span.selected__povalue {
+      font-weight: 500;
+      color: #2b2b2b;
+    }
+  }
+
+  .remaining__price {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-right: 16px;
+    p {
+      color: $seafoam;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    svg {
+      font-size: 14px;
+      color: #2b2b2b;
+    }
+
+    .remaining__pending {
+      color: #858585;
+    }
+  }
+
+  .selected__price {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    p {
+      color: #858585;
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    svg {
+      font-size: 14px;
+      color: #2b2b2b;
+    }
+  }
+
+  .remaining__flex__selected {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    padding: 10px 0;
+    opacity: 0.75;
+  }
+
+  .remaining__flex {
+    display: flex;
+    opacity: 1;
+    align-items: baseline;
+    gap: 20px;
+    background-color: white;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+
+  .remaining__flex__gray * {
+    color: lightgray;
+  }
+
+  .remaining__truckLogo {
+    img {
+      width: 100%;
+    }
+  }
+}

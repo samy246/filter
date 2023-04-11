@@ -1,0 +1,23 @@
+{
+  "short_name": "Jagota",
+  "name": "Jagota",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

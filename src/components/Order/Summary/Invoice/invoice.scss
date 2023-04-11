@@ -1,0 +1,510 @@
+.invoice_main_container {
+  overflow: hidden;
+  position: relative;
+  font-size: 11px;
+  height: 100vh;
+  img {
+    width: 693px;
+  }
+  .invoice_first_div_content {
+    .customer_code {
+      position: absolute;
+      top: 97px;
+      left: 173px;
+    }
+    .customer_name {
+      position: absolute;
+      top: 118px;
+      left: 173px;
+    }
+    .invoice_date {
+      position: absolute;
+      top: 97px;
+      left: 437px;
+    }
+    .invoice_no {
+      position: absolute;
+      top: 97px;
+      left: 579px;
+    }
+    .invoice_time {
+      position: absolute;
+      top: 191px;
+      left: 579px;
+    }
+    .invoice_delivery {
+      position: absolute;
+      top: 120px;
+      left: 429px;
+      width: 220px;
+    }
+    .invoice_department {
+      position: absolute;
+      top: 191px;
+      left: 437px;
+    }
+    .customer_po_no {
+      position: absolute;
+      top: 236px;
+      left: 58px;
+    }
+    .buyer {
+      position: absolute;
+      top: 236px;
+      left: 178px;
+    }
+    .invoice_term {
+      position: absolute;
+      top: 236px;
+      left: 281px;
+    }
+    .invoice_due_date {
+      position: absolute;
+      top: 236px;
+      left: 345px;
+    }
+    .invoice_staff_code {
+      position: absolute;
+      top: 235px;
+      left: 430px;
+      font-size: 9px;
+    }
+    .invoice_staff_name {
+      position: absolute;
+      top: 243px;
+      left: 403px;
+      font-size: 9px;
+      width: 97px;
+    }
+    .accountant {
+      position: absolute;
+      top: 236px;
+      left: 504px;
+    }
+    .route {
+      position: absolute;
+      top: 236px;
+      left: 593px;
+    }
+  }
+  .invoice_table_container {
+    position: absolute;
+    top: 290px;
+    left: 50px;
+    .table {
+      text-align: center;
+      font-size: 7.5px;
+      margin-bottom: 4px;
+      .table_tr {
+        display: flex;
+        flex-wrap: nowrap;
+
+        & * {
+          font-size: 12px;
+        }
+        .table_sub_1 {
+          width: 25px;
+        }
+        .table_sub_2 {
+          width: 250px;
+          text-align: left;
+          padding-left: 4px;
+        }
+        .table_sub_3 {
+          width: 27px;
+        }
+        .table_sub_4 {
+          width: 30px;
+        }
+        .table_sub_5 {
+          width: 79px;
+        }
+        .table_sub_6 {
+          width: 55px;
+        }
+        .table_sub_7 {
+          width: 30px;
+          font-size: 6px;
+        }
+        .table_sub_8 {
+          width: 30px;
+        }
+        .table_sub_9 {
+          width: 71px;
+        }
+      }
+    }
+  }
+  .total {
+    position: absolute;
+    left: 587px;
+    top: 660px;
+  }
+  .btn_invoice_container {
+    margin-left: 323px;
+    padding: 59px 0px;
+    .btn.btn_invoice {
+      color: #ffffff;
+      background: #014681;
+      svg {
+        height: 18px;
+        width: 18px;
+        margin-right: 7px;
+      }
+    }
+    .btn.btn_invoice_no_display {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  .invoice_main_container {
+    margin-left: 32.5%;
+  }
+}
+@media (max-width: 1600px) {
+  .invoice_main_container {
+    margin-left: 27%;
+  }
+}
+@media (max-width: 1200px) {
+  .invoice_main_container {
+    margin-left: 23%;
+  }
+}
+@media (max-width: 1024px) {
+  .invoice_main_container {
+    margin-left: 17%;
+  }
+}
+@media (max-width: 768px) {
+  .invoice_main_container {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 580px) {
+  .invoice_main_container .invoice_table_container .table .table_tr * {
+    font-size: 6px;
+  }
+  .invoice_main_container {
+    font-size: 6px;
+    margin: 0;
+    img {
+      width: 580px;
+    }
+    .invoice_first_div_content {
+      .customer_code {
+        top: 60px;
+        left: 104px;
+      }
+      .customer_name {
+        top: 73px;
+        left: 105px;
+      }
+      .invoice_date {
+        top: 60px;
+        left: 266px;
+      }
+      .invoice_no {
+        top: 60px;
+        left: 354px;
+      }
+      .invoice_time {
+        top: 119px;
+        left: 354px;
+      }
+      .invoice_delivery {
+        top: 75px;
+        left: 266px;
+        width: 103px;
+      }
+      .invoice_department {
+        top: 119px;
+        left: 267px;
+      }
+      .customer_po_no {
+        top: 146px;
+        left: 36px;
+      }
+      .buyer {
+        top: 146px;
+        left: 112px;
+      }
+      .invoice_term {
+        top: 146px;
+        left: 174px;
+      }
+      .invoice_due_date {
+        top: 146px;
+        left: 216px;
+      }
+      .invoice_staff_code {
+        top: 144px;
+        left: 268px;
+        font-size: 5px;
+      }
+      .invoice_staff_name {
+        top: 150px;
+        left: 249px;
+        font-size: 5px;
+        width: 97px;
+      }
+      .accountant {
+        top: 145px;
+        left: 312px;
+      }
+      .route {
+        top: 146px;
+        left: 363px;
+      }
+    }
+    .invoice_table_container {
+      top: 242px;
+      left: 45px;
+      .table {
+        text-align: center;
+        font-size: 5px;
+        .table_tr {
+          display: flex;
+          flex-wrap: nowrap;
+
+          .table_sub_1 {
+            width: 15px;
+          }
+          .table_sub_2 {
+            width: 213px;
+          }
+          .table_sub_3 {
+            width: 20px;
+          }
+          .table_sub_4 {
+            width: 28px;
+          }
+          .table_sub_5 {
+            width: 65px;
+          }
+          .table_sub_6 {
+            width: 45px;
+          }
+          .table_sub_7 {
+            width: 25px;
+            font-size: 6px;
+          }
+          .table_sub_8 {
+            width: 19px;
+          }
+          .table_sub_9 {
+            width: 43px;
+          }
+        }
+      }
+    }
+    .total {
+      left: 363px;
+      top: 407px;
+    }
+    .btn_invoice_container {
+      margin-left: 188px;
+      padding: 21px 0px;
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .invoice_main_container img {
+    width: 465px;
+  }
+}
+
+@media (max-width: 420px) {
+  .invoice_main_container img {
+    width: 420px;
+  }
+}
+
+@media (max-width: 375px) {
+  .invoice_main_container img {
+    width: 375px;
+  }
+
+  .invoice_main_container {
+    .invoice_table_container {
+      top: 160px;
+      left: 26px;
+  
+      .table {
+        .table_tr {
+          .table_sub_2 {
+            width: 134px;
+          }
+          .table_sub_3, .table_sub_4 {
+            width: 16px;
+          }
+          .table_sub_5 {
+            width: 43px;
+          }
+          .table_sub_6 {
+            width: 29px;
+          }
+          .table_sub_7 {
+            width: 15px;
+          }
+          .table_sub_9 {
+            width: 34px;
+          }
+        }
+      }
+    }
+    .invoice_first_div_content{
+      .customer_code {
+        top: 53px;
+        left: 88px;
+      }
+      .customer_name {
+        top: 66px;
+        left: 88px;
+      }
+      .invoice_date {
+        top: 9em;
+        left: 39em;
+      }
+      .invoice_delivery {
+        top: 11em;
+        left: 39em;
+      }
+      .invoice_no {
+        top: 9em;
+        left: 52em;
+      }
+      .invoice_department {
+        top: 17.5em;
+        left: 39em;
+      }
+    }
+  } 
+}
+
+@media (max-width: 320px) {
+  .invoice_main_container {
+    font-size: 5px;
+    margin: 0;
+    img {
+      width: 320px;
+    }
+    .invoice_first_div_content {
+      .customer_code {
+        top: 45px;
+        left: 78px;
+      }
+      .customer_name {
+        top: 53px;
+        left: 78px;
+      }
+      .invoice_date {
+        top: 45px;
+        left: 201px;
+      }
+      .invoice_no {
+        top: 45px;
+        left: 267px;
+      }
+      .invoice_time {
+        top: 89px;
+        left: 268px;
+      }
+      .invoice_delivery {
+        top: 56px;
+        left: 201px;
+        width: 86px;
+      }
+      .invoice_department {
+        top: 88px;
+        left: 201px;
+      }
+      .customer_po_no {
+        top: 110px;
+        left: 27px;
+      }
+      .buyer {
+        top: 110px;
+        left: 84px;
+      }
+      .invoice_term {
+        top: 110px;
+        left: 131px;
+      }
+      .invoice_due_date {
+        top: 110px;
+        left: 163px;
+      }
+      .invoice_staff_code {
+        top: 109px;
+        left: 201px;
+        font-size: 4px;
+      }
+      .invoice_staff_name {
+        top: 113px;
+        left: 188px;
+        font-size: 4px;
+        width: 97px;
+      }
+      .accountant {
+        top: 110px;
+        left: 234px;
+      }
+      .route {
+        top: 110px;
+        left: 274px;
+      }
+    }
+    .invoice_table_container {
+      top: 135px;
+      left: 24px;
+      .table {
+        text-align: center;
+        font-size: 4px;
+        .table_tr {
+          display: flex;
+          flex-wrap: nowrap;
+          .table_sub_1 {
+            width: 9px;
+          }
+          .table_sub_2 {
+            width: 116px;
+          }
+          .table_sub_3 {
+            width: 13px;
+          }
+          .table_sub_4 {
+            width: 14px;
+          }
+          .table_sub_5 {
+            width: 38px;
+          }
+          .table_sub_6 {
+            width: 23px;
+          }
+          .table_sub_7 {
+            width: 16px;
+            font-size: 5px;
+          }
+          .table_sub_8 {
+            width: 11px;
+          }
+          .table_sub_9 {
+            width: 34px;
+          }
+        }
+      }
+    }
+    .total {
+      left: 275px;
+      top: 306px;
+    }
+    .btn_invoice_container {
+      margin-left: 135px;
+      padding: 16px 0px;
+    }
+  }
+}

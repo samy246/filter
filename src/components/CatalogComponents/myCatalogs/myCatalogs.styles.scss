@@ -1,0 +1,146 @@
+$seafoam: #37bfa7;
+.border_li {
+  border-left: 1px solid #dcdbdb;
+}
+.mycatalogs {
+  border-radius: 10px;
+  background-color: white;
+  .mycatalogs_heading {
+    padding-bottom: 4px;
+  }
+  .mycatalogs__menu {
+    border-radius: 8px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .mycatalogs__plpheader {
+      display: none;
+    }
+
+    .mycatalogs__plpheader__open {
+      display: block;
+    }
+
+    .mycatalogs__categoryList {
+      padding: 0px;
+    }
+    .active {
+      border-bottom: 5px solid $seafoam;
+    }
+    .mycatalogs__categoryList__div {
+      width: 9em;
+    }
+    .mycatalogs__menu__list {
+      display: flex;
+      align-items: center;
+
+      a {
+        border-right: 1px solid gray;
+
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        gap: 10px;
+
+        i {
+          color: $seafoam;
+          font-size: 30px;
+        }
+        // span {
+        //   font-weight: 400;
+        //   margin: 0px;
+        //   font-size: 13px;
+        // }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .mycatalogs {
+    .mycatalogs__menu {
+      .mycatalogs__menu__list {
+        display: flex;
+        padding: 20px 10px;
+
+        li {
+          a {
+            align-items: center;
+            padding: 0px 10px;
+            text-decoration: none;
+            color: black;
+            i {
+              padding: 0px 8px 0px 0px;
+              color: $seafoam;
+              font-size: 20px;
+            }
+            span {
+              font-weight: 400;
+              margin: 0px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mycatalogs {
+    .mycatalogs__menu {
+      .mycatalogs__menu__list {
+        display: flex;
+        padding: 8px 8px;
+
+        li {
+          a {
+            align-items: center;
+            padding: 0px 6px;
+            text-decoration: none;
+            color: black;
+            i {
+              padding: 0px 4px 0px 0px;
+              color: $seafoam;
+              font-size: 15px;
+            }
+            span {
+              font-weight: 400;
+              margin: 0px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .mycatalogs {
+    .mycatalogs__menu {
+      .mycatalogs__menu__list {
+        display: flex;
+        padding: 8px 8px;
+
+        li {
+          a {
+            align-items: center;
+            padding: 0px;
+            text-decoration: none;
+            color: black;
+            i {
+              padding: 0px 4px 0px 0px;
+              color: $seafoam;
+              font-size: 8px;
+            }
+            span {
+              font-weight: 400;
+              margin: 0px;
+              font-size: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

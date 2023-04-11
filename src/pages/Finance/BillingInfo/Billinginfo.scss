@@ -1,0 +1,298 @@
+$seafoam: #37bfa7;
+.billinginfo {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3em 3%;
+  min-height: calc(100vh - 392px);
+
+  .billinginfo__back {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 1em;
+    cursor: pointer;
+
+    h4 {
+      color: #858585;
+      font-size: 14px;
+      margin: 0;
+      background-color: #dcdbdb;
+      border-radius: 20px;
+      width: 120px;
+      padding: 4.1px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+  .billinginfo__header {
+    margin: 0.8em 0 2em;
+    h4 {
+      font-size: 30px;
+      color: #2b2b2b;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  .billinginfo__tablehead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1em;
+
+    .tablehead__left {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      h4 {
+        color: #1b1b1b;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .tabshead {
+          border: 1px solid #dcdbdb;
+          min-width: 60px;
+          border-radius: 20px;
+          text-align: center;
+          padding: 1px 12px;
+          color: #858585;
+          font-size: 14px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+
+        .selectedTab {
+          background-color: $seafoam;
+          color: white;
+        }
+      }
+    }
+
+    .tablehead__right {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+
+      img {
+        width: 16px;
+        object-fit: contain;
+      }
+
+      span {
+        color: #2b2b2b;
+        font-size: 14px;
+      }
+
+      .dateselect {
+        input {
+          width: 100px;
+          height: 25px;
+          color: #858585;
+          font-size: 12px;
+          border-radius: 20px;
+          border: 1px solid #e4e4e4;
+          text-align: center;
+          margin: 0 10px;
+        }
+      }
+
+      .sortselect {
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+
+        .dropdown {
+          #dropdown-basic {
+            width: 180px;
+            padding: 4.1px;
+            font-size: 14px;
+            color: #858585;
+            border: 1px solid #e4e4e4;
+            background-color: white;
+          }
+        }
+        .dropdown-item {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .billinginfo__tablebody {
+    border: 1px solid #dcdbdb;
+    border-radius: 20px;
+    min-height: 100px;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    .tablebody__left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      .lefttop {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+
+        p {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          span {
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+
+        .regular {
+          font-weight: 400;
+        }
+      }
+
+      .leftbottom {
+        p {
+          display: flex;
+          align-items: center;
+          gap: 2em;
+          margin: 0;
+
+          span {
+            font-size: 18px;
+            font-weight: 500;
+          }
+
+          .value {
+            ul {
+              display: flex;
+              padding: 0;
+              column-gap: 2em;
+              margin: 0;
+              list-style: none;
+              flex-wrap: wrap;
+
+              li {
+                font-size: 18px;
+                font-weight: 400;
+                position: relative;
+
+                &::before {
+                  content: "";
+                  background-color: #2b2b2b;
+                  width: 6px;
+                  height: 6px;
+                  position: absolute;
+                  border-radius: 100%;
+                  left: -10px;
+                  top: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .tablebody__middle {
+      p {
+        margin: 0;
+
+        span {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        .value {
+          color: #0085e1;
+        }
+
+        .overdue {
+          color: #d03030;
+        }
+      }
+
+      .overdue__button {
+        font-size: 14px;
+        background-color: #d03030;
+        border: 1px solid #d03030;
+        border-radius: 20px;
+        color: white;
+        width: max-content;
+        padding: 0.25em 1.35em;
+        font-weight: 500;
+        margin: 1em 0;
+      }
+    }
+
+    .tablebody__right {
+      width: 200px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .paybill__button,
+      .cancelled__button,
+      .paid__button {
+        margin: 0;
+        background-color: #fdc156;
+        border-radius: 8px;
+        color: #2b2b2b;
+        font-size: 14px;
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 6px #00000029;
+        cursor: pointer;
+      }
+
+      .cancelled__button {
+        background-color: #f8e0e0;
+        color: #d03030;
+        border: 1px solid #d03030;
+        box-shadow: none;
+      }
+
+      .paid__button {
+        background-color: $seafoam;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .billinginfo__tablehead {
+    flex-direction: column-reverse;
+    gap: 2em;
+
+    .tablehead__left {
+      flex-direction: column;
+      h4 {
+        font-size: 12px;
+        color: #858585;
+      }
+    }
+  }
+
+  .billinginfo__tablebody {
+    // display: none !important;
+  }
+}

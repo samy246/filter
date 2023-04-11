@@ -1,0 +1,89 @@
+{
+  "binfo": [
+    {
+      "billingid": "980988",
+      "amount": "25000",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "15/Sep/2022",
+      "overdue": "false",
+      "status": "Unpaid"
+    },
+    {
+      "billingid": "980989",
+      "amount": "32500",
+      "invoice": [
+        "IN6403036912",
+        "IN6403036113",
+        "IN6403036897",
+        "IN6403035596"
+      ],
+      "duedate": "23/Oct/2022",
+      "overdue": "true",
+      "status": "Cancelled"
+    },
+    {
+      "billingid": "980990",
+      "amount": "121200",
+      "invoice": ["IN6403036555", "IN6403038787"],
+      "duedate": "5/Nov/2022",
+      "overdue": "false",
+      "status": "Paid"
+    },
+    {
+      "billingid": "980991",
+      "amount": "8500",
+      "invoice": ["IN6403036667"],
+      "duedate": "7/Nov/2022",
+      "overdue": "false",
+      "status": "Unpaid"
+    },
+    {
+      "billingid": "980992",
+      "amount": "30000",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "19/Oct/2022",
+      "overdue": "true",
+      "status": "Cancelled"
+    },
+    {
+      "billingid": "980993",
+      "amount": "2000",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "25/Oct/2022",
+      "overdue": "true",
+      "status": "Unpaid"
+    },
+    {
+      "billingid": "980454",
+      "amount": "17000",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "24/Oct/2022",
+      "overdue": "false",
+      "status": "Paid"
+    },
+    {
+      "billingid": "980911",
+      "amount": "58625",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "28/Sep/2022",
+      "overdue": "false",
+      "status": "Paid"
+    },
+    {
+      "billingid": "676767",
+      "amount": "87566",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "22/June/2022",
+      "overdue": "true",
+      "status": "Unpaid"
+    },
+    {
+      "billingid": "888888",
+      "amount": "78455",
+      "invoice": ["IN6403036803", "IN6403036813", "IN6403036807"],
+      "duedate": "1/Aug/2022",
+      "overdue": "false",
+      "status": "Unpaid"
+    }
+  ]
+}

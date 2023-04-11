@@ -1,0 +1,49 @@
+.paymenthistory {
+  $seafoam: #37bfa7;
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    padding: 4px;
+    margin-bottom: 0;
+    thead {
+      th {
+        text-align: center;
+        color: #2b2b2b;
+        font-size: 16px;
+        font-weight: 500 !important;
+        text-decoration: underline;
+      }
+    }
+    tbody {
+      th {
+        text-align: center;
+        color: #2b2b2b;
+        font-size: 14px;
+        font-weight: 400 !important;
+        height: 25px;
+        padding: 0;
+      }
+
+      .paidstatus {
+        color: $seafoam;
+        background-color: #37bfa726;
+        border: 1px solid $seafoam;
+        border-radius: 20px;
+        vertical-align: bottom;
+      }
+      .unpaidstatus {
+        color: #0085e1;
+        border: 1px solid #0085e1;
+        border-radius: 20px;
+        vertical-align: bottom;
+      }
+      .canstatus {
+        color: #d03030;
+        background-color: #f8e0e0;
+        border: 1px solid #d03030;
+        border-radius: 20px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+$seafoam: #37bfa7;
+.summary {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px #7f7f7f1c;
+  padding: 14px;
+
+  h6 {
+    font-weight: 600;
+    border-bottom: 1px solid lightgray;
+    line-height: 2.19;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p.summary__total {
+    font-weight: 600;
+    border-top: 1px solid lightgray;
+  }
+
+  span.summary__value {
+    font-weight: 500;
+  }
+
+  .summary__buy,
+  .summary__review {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 0.5em 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .summary__buy {
+    background-color: $seafoam;
+    color: white;
+  }
+
+  .summary__review {
+    background-color: #57c36f26;
+    border: 1px solid $seafoam;
+    a {
+      color: $seafoam;
+      text-decoration: none;
+    }
+  }
+}

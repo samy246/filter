@@ -1,0 +1,178 @@
+$seafoam: #37bfa7;
+.mobileinvoice {
+  .mobileinvoice__back {
+    display: flex;
+    align-items: center;
+    margin: 0 3%;
+    padding: 10px 0;
+    box-shadow: 0px 5px 10px #2b2b2b1a;
+
+    h4 {
+      margin: 0;
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .mobileinvoice__tabs {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+      border: 1px solid #eae9e9;
+      width: 50%;
+      text-align: center;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .selectedtab {
+      background-color: $seafoam;
+      color: white !important;
+      font-weight: 600 !important;
+    }
+  }
+
+  .mobileinvoice__header {
+    margin: 1em 3%;
+
+    p {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      .label,
+      .value {
+        width: 50%;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+
+    .invoiceid {
+      .label {
+        background-color: #eae9e9;
+        border-radius: 12px;
+        padding: 0.3em 1em;
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      .value {
+        color: #0085e1;
+        font-size: 14px;
+        border: 1px solid #0085e1;
+        width: max-content;
+        border-radius: 20px;
+        padding: 1px 5px;
+      }
+    }
+    .invoiceid,
+    .deliverydate,
+    .billto,
+    .duedate {
+      .label {
+        text-align: left;
+      }
+
+      .value {
+        text-align: right;
+      }
+    }
+
+    .duedate {
+      .label strong {
+        color: $seafoam;
+      }
+      .value strong {
+        color: #0085e1;
+        font-weight: 400;
+      }
+    }
+
+    .amount {
+      .label,
+      .value {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .label {
+        text-align: left;
+      }
+
+      .value {
+        text-align: right;
+      }
+    }
+  }
+
+  .mobileinvoice__content {
+    background-color: #f3f3f3;
+    padding: 1em;
+
+    .content__border {
+      background-color: white;
+      padding: 1em;
+      border-radius: 12px;
+      margin: 0;
+
+      p {
+        border-bottom: 1px solid #eae9e9;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+          border-bottom: 1px solid #eae9e9;
+          font-size: 12px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            max-width: 50px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+
+          .pname {
+            width: 50%;
+          }
+
+          .ptotal {
+              min-width: 3em;
+          }
+
+          span {
+            margin: 1em 0;
+          }
+        }
+      }
+    }
+  }
+
+  .mobileinvoice__paybill {
+    box-shadow: 0px -3px 10px #2b2b2b0f;
+    border: 1px solid #e4e4e4;
+    padding: 1em;
+
+    p {
+      padding: 1em;
+      text-align: center;
+      margin: 0 auto;
+      background-color: #fdc156;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}

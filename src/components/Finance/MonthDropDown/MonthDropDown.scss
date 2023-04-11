@@ -1,0 +1,67 @@
+$seafoam: #37bfa7;
+.monthdropdown {
+  ul {
+    list-style: none;
+    background-color: white;
+    padding: 2px;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px #7f7f7f1c;
+
+    li:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 3em;
+      padding: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: $seafoam;
+      }
+
+      label {
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+          content: "";
+          -webkit-appearance: none;
+          background-color: transparent;
+          border: 2px solid $seafoam;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+            inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 10px;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 16px;
+        }
+      }
+      input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+    }
+
+    li input[type="checkbox"]:checked + li label:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 9px;
+      width: 6px;
+      height: 14px;
+      border: solid $seafoam;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+}

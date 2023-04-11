@@ -1,0 +1,37 @@
+.catalog_carousel {
+  img {
+    height: 10em;
+  }
+}
+.Carosal_nextArrow {
+  right: -12px;
+  position: absolute;
+  top: 40%;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.Carosal_prevArrow {
+  left: -12px;
+  position: absolute;
+  top: 40%;
+  z-index: 100;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .Carosal_nextArrow {
+    right: -16px;
+  }
+  .Carosal_prevArrow {
+    left: -16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Carosal_nextArrow,
+  .Carosal_prevArrow {
+    display: none;
+  }
+}

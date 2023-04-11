@@ -1,0 +1,127 @@
+$seafoam: #37bfa7;
+.reaquest__button {
+  color: #ffff !important;
+  background-color: $seafoam !important;
+  border-color: $seafoam !important;
+  padding: 8px;
+}
+
+.reaquest__button_orange {
+  float: right;
+  color: #fdc156 !important;
+  background: #fdc15626 !important;
+  border-color: #fdc156 !important;
+}
+.pc,
+.kg {
+  padding: 3px 1em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0 !important;
+  color: gray;
+}
+
+.unitSelected {
+  background-color: $seafoam;
+  color: white;
+  border-radius: 8px;
+}
+.reaquest__button_div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  justify-content: center;
+  align-items: flex-end;
+
+  button {
+    width: max-content;
+  }
+}
+.qatation_units_controls {
+  border-radius: 8px;
+  padding-left: 1px;
+  gap: 10px;
+
+  & > * {
+    border: 1px solid #e4e4e4;
+  }
+
+  .dropdown-menu {
+    min-width: 5rem !important;
+    left: 5.5em;
+    right: 0;
+  }
+
+  .btn-secondary {
+    color: #2b2b2b;
+    background-color: #fff !important;
+    border-color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+}
+.qatation_units {
+  gap: 10px;
+  align-items: center;
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    width: 13em;
+  }
+}
+.popover_price {
+  gap: 10px;
+  align-items: center;
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    width: 11em;
+  }
+}
+.pr {
+  padding-right: 10px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.requestbutton__wrapper {
+  min-width: 11em;
+  background-color: $seafoam;
+  border-radius: 8px;
+}
+
+#popover-positioned-bottom {
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #e4e4e4;
+}
+
+.quote__submit {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  button {
+    font-size: 14px;
+  }
+}
+
+.popover-header {
+  background-color: white !important;
+}
+
+.form-control {
+  font-size: 14px !important;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: white !important;
+}

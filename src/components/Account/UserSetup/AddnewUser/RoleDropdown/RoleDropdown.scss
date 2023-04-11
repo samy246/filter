@@ -1,0 +1,106 @@
+$seafoam: #37bfa7;
+.RoleDropdown {
+  border-radius: 10px;
+  background: #f5f5f5;
+  border: 1px solid #dcdbdb;
+  margin-bottom: 10px;
+  .form-check-label {
+    font-weight: 500;
+  }
+  .RoleDropdown_header {
+    color: black;
+    padding: 4px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5em;
+    font-weight: 500;
+  }
+  .dropdown-body {
+    padding: 5px;
+    border-top: 1px solid #e5e8ec;
+    display: none;
+    box-shadow: 0px 5px 10px #0000001a;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .dropdown-body.open {
+    display: block;
+    max-height: 20em;
+    overflow: scroll;
+  }
+}
+.RoleDropdown {
+  .dropdown-item {
+    padding: 10px;
+    border-bottom: 1px solid #e5e8ec;
+    display: flex;
+    gap: 7px;
+    .form-check-input {
+      width: 0em !important;
+      height: 0em;
+      border: none;
+      // border-radius: 50%;
+      // color: $seafoam;
+    }
+    .form-check-input:checked {
+      width: .5em !important;
+      background-color: $seafoam;
+      border-color: $seafoam;
+      position: relative;
+    }
+    .form-check-input:checked[type="radio"]:checked {
+      // background-image: url();
+      &::after {
+        content: "";
+        border-bottom: 2px solid white;
+        width: 5px;
+        z-index: 99;
+        border-right: 2px solid white;
+        height: 9px;
+        position: absolute;
+        transform: rotate(45deg);
+        left: 4px;
+        top: 1.5px;
+      }
+    }
+  }
+  .dropdown-item:last-child {
+    border-bottom: 1px none;
+  }
+  .active {
+    cursor: pointer;
+    background: $seafoam 0% 0% no-repeat !important;
+    color: $seafoam;
+    label {
+      color: white;
+    }
+  }
+  .dropdown-item:hover {
+    cursor: pointer;
+    background: $seafoam 0% 0% no-repeat;
+    color: $seafoam;
+    label {
+      color: white;
+    }
+  }
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: #91a5be;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+.icon {
+  font-size: 13px;
+  color: black;
+  transform: rotate(90deg);
+  transition: all 0.2s ease-in-out;
+}
+.icon.open {
+  transform: rotate(270deg);
+}

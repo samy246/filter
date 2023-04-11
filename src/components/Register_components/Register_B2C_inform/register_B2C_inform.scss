@@ -1,0 +1,82 @@
+.Register_B2C_inform {
+  background: #f4f6e9 0% 0% no-repeat padding-box;
+  .f_9 {
+    font-size: 9px;
+  }
+  .Register_B2C_inform_main {
+    padding: 0px 45px;
+    label {
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .otp_btn {
+      background: #56c36f 0% 0% no-repeat padding-box;
+      border: none;
+      padding: 10px 66px;
+      color: white;
+      border-radius: 24px;
+    }
+    .submit_button {
+      color: white;
+      background-color: #56c36f;
+      padding: 10px 10px;
+      &:disabled {
+        background-color: #d3d3d3;
+        border: none;
+      }
+    }
+  }
+  .Register_B2C_inform_main_2 {
+    background-image: url("../../../assets/images/Login_imgs/bg_img.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Register_B2C_inform {
+    .Register_B2C_inform_col-1 {
+      width: 100%;
+      .detiles_form {
+        .user_name {
+          width: 100%;
+        }
+        .password {
+          width: 100%;
+        }
+        .renew__password {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Register_B2C_inform {
+    .Register_B2C_inform_col-1 {
+      width: 100%;
+      .detiles_form {
+        .user_name {
+          width: 100%;
+        }
+        .password {
+          width: 100%;
+        }
+        .renew__password {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 475px) {
+  .Register_B2C_inform {
+    .Register_B2C_inform_col-1 {
+      width: 100%;
+      .Register_B2C_inform_main {
+        padding: 0px 5px;
+      }
+    }
+  }
+}

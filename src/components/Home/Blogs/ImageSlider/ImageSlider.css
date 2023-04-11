@@ -1,0 +1,50 @@
+.slide {
+    transform: scale(0.7);
+    transition: transform 300ms;
+    opacity: 0.5;
+  }
+  
+  .slideWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .prevArrow {
+    position: absolute;
+    top: 40%;
+    left: 29px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 2rem;
+   
+  }
+  .fa-angle-right,.fa-angle-left{
+  border: 1px solid;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding-left: 5px;
+  background-color: #37bfa7;
+  color: white;
+  }
+  .fa-angle-right
+  {
+    padding-left: 8px;
+  }
+  .nextArrow {
+    position: absolute;
+    top: 40%;
+    right: 29px;
+    z-index: 1;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    .prevArrow {
+      left: 12px;
+    }
+    .nextArrow {
+      right: 12px;
+    }
+  }

@@ -1,0 +1,57 @@
+$seafoam: #37bfa7;
+.chrismas__pramotion {
+  .chrismas__pramotion__heading {
+    align-items: baseline;
+    .seemore_link {
+      margin-left: auto;
+      .chrismas_seemore_icon {
+        border: 0px;
+        border-radius: 0px;
+        width: 32px;
+        height: 32px;
+        padding-left: 5px;
+        background-color: #f5f5f5;
+        color: black;
+      }
+    }
+  }
+  .finance__spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 700px;
+    justify-content: center;
+    position: relative;
+    span {
+      position: absolute;
+    }
+  }
+
+  .spinner-border {
+    width: 14em;
+    height: 14em;
+    color: $seafoam;
+    display: flex;
+    border-width: 30px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: $seafoam;
+    animation: 2s linear infinite spinner-border;
+  }
+}
+@media (max-width: 480px) {
+  .chrismas__pramotion__heading {
+    flex-direction: column;
+    a {
+      margin-left: unset !important;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .catalogpage h4 {
+    font-size: 14px !important;
+  }
+  .chrismas__pramotion .chrismas__pramotion__heading .seemore_link {
+    font-size: 12px;
+  }
+}

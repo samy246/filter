@@ -1,0 +1,54 @@
+$seafoam: #37bfa7;
+.cookie {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 8px #2b2b2b1a;
+    padding: 2em;
+    position: relative;
+
+    .cookie__goback {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 10px;
+        color: white;
+        background-color: $seafoam;
+    }
+
+    .cookie__title {
+        color: cookie__title;
+        font-weight: 600;
+        font-size: 30px ;
+        text-align: center;
+        color: $seafoam;
+    }
+
+    .cookie__intro {
+        margin: 3em 0;
+        color: #2b2b2b;
+    }
+
+    .cookie__list {
+        li {
+            font-size: 20px;
+            text-decoration: underline;
+            color: $seafoam;
+            margin-bottom: 1em;
+        }
+
+        table, th, td {
+            border: 1px solid #2b2b2b;
+            border-collapse: collapse;
+            color: #2b2b2b;
+            font-weight: 500;
+          }
+
+        p {
+            color: #2b2b2b;
+        }
+
+        // table td:first-child, table th:first-child {
+        //     width: 30%;
+        // }
+    }
+}

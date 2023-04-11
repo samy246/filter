@@ -1,0 +1,53 @@
+.usersetup__activitylogs__div {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin: 8px 0px;
+  padding: 10px 16px;
+  border: 1px solid#E9E9E9;
+  border-radius: 20px;
+  gap: 20px;
+  img {
+    border-radius: 50%;
+  }
+  .activitylogs__userdata {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      color: #858585;
+    }
+
+    .logs__userdata {
+      width: 23vw;
+    }
+  }
+  .activitylogs__time {
+    display: grid;
+    span {
+      color: #858585;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .usersetup__activitylogs__div {
+    .activitylogs__userdata {
+      width: 100%;
+      display: block;
+
+      .logs__userdata {
+        width: 100%;
+      }
+    }
+    .activitylogs__time {
+      display: flex;
+      gap: 10px;
+      span {
+        text-align: start !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "billing": {
+    "customername": "Louise Coffee",
+    "customerid": "KNA20165",
+    "creditterms": "30 days",
+    "creditlimit": "1,000,000",
+    "creditused": "100,000",
+    "creditbalance": "900,000",
+    "outstanding": "65000",
+    "outstandinginvoice": "3",
+    "due": "35000",
+    "dueinvoice": "2",
+    "overdue": "20000",
+    "overdueinvoice": "2",
+    "billinginfo": [
+      {
+        "BillingID": "980988",
+        "DueDate": "15/Sep/2022",
+        "Invoices": [
+          "IN6403036803",
+          "IN6403036803",
+          "IN6403036804",
+          "IN6403036806"
+        ],
+        "Amount": "25000",
+        "Overdue": "false"
+      },
+      {
+        "BillingID": "896554",
+        "DueDate": "5/Oct/2022",
+        "Invoices": ["IN6403036812", "IN6403036885"],
+        "Amount": "32000",
+        "Overdue": "false"
+      },
+      {
+        "BillingID": "242511",
+        "DueDate": "30/Oct/2022",
+        "Invoices": ["IN6403036888", "IN6403036811", "IN6403036854"],
+        "Amount": "2000",
+        "Overdue": "true"
+      }
+    ],
+    "invoiceinfo": [
+      {
+        "invoiceno": "IN6403036000",
+        "billto": "Louise Coffee Ekamai",
+        "date": "25/Sep/2022",
+        "total": "20000",
+        "status": "Paid",
+        "type": "invoice"
+      },
+      {
+        "invoiceno": "CN 175",
+        "billto": "Louise Coffee Ekamai",
+        "date": "16/Sep/2022",
+        "total": "-30000",
+        "status": "UnPaid",
+        "type": "credit"
+      },
+      {
+        "invoiceno": "CN 174",
+        "billto": "Louise Coffee Ekamai",
+        "date": "17/Sep/2022",
+        "total": "-20000",
+        "status": "Cancelled",
+        "type": "credit"
+      },
+      {
+        "invoiceno": "IN6403036002",
+        "billto": "Louise Coffee Ekamai",
+        "date": "10/Oct/2022",
+        "total": "20000",
+        "status": "Paid",
+        "type": "invoice"
+      },
+      {
+        "invoiceno": "IN6403036054",
+        "billto": "Louise Coffee Ekamai",
+        "date": "05/Oct/2022",
+        "total": "40000",
+        "status": "UnPaid",
+        "type": "invoice"
+      }
+    ],
+    "paymentinfo": [
+      {
+        "payid": "SAFOJ036000",
+        "date": "15/Jan/2022",
+        "amount": "80000",
+        "paymethod": "CREDIT",
+        "status": "Paid",
+        "invoiceno": "IN6403036000"
+      },
+      {
+        "payid": "SAFOJ036000",
+        "date": "15/Feb/2022",
+        "amount": "80000",
+        "paymethod": "CASH",
+        "status": "Paid",
+        "invoiceno": "IN6403036000"
+      },
+      {
+        "payid": "SAFOJ036000",
+        "date": "15/Sep/2022",
+        "amount": "80000",
+        "paymethod": "CASH",
+        "status": "Cancelled",
+        "invoiceno": "IN6403036000"
+      },
+      {
+        "payid": "SAFOJ036000",
+        "date": "15/Jul/2022",
+        "amount": "80000",
+        "paymethod": "CREDIT",
+        "status": "Paid",
+        "invoiceno": "IN6403036000"
+      },
+      {
+        "payid": "SAFOJ036000",
+        "date": "15/Oct/2022",
+        "amount": "80000",
+        "paymethod": "CREDIT",
+        "status": "Paid",
+        "invoiceno": "IN6403036000"
+      }
+    ]
+  }
+}

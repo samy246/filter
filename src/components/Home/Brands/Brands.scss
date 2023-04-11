@@ -1,0 +1,100 @@
+.brands {
+  max-width: 100%;
+  width: 100%;
+  padding: 30px 10px;
+  .brands__logo__mobile {
+    display: none;
+  }
+  img {
+    border-radius: 0;
+  }
+
+  h3,
+  .brands__logo {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 1em auto;
+  }
+
+  .brands__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+
+    .brands__img {
+      width: 107px;
+      height: 100px;
+
+      .lazyload-wrapper  img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .brands__logo {
+    display: none !important;
+  }
+  .brands__logo__mobile {
+    display: block !important;
+
+    .logs {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1em;
+
+      .brands__img {
+        width: 100px;
+        height: 100px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .brands .brands__logo .brands__img {
+    width: 89px;
+  }
+
+  .brands_carousel {
+    display: block !important;
+    img {
+      height: 84px;
+      margin: auto;
+    }
+  }
+  .Carosal_nextArrow_brands {
+    right: -2px;
+    position: absolute;
+    top: 22%;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+  }
+  .Carosal_prevArrow_brands {
+    left: -2px;
+    position: absolute;
+    top: 22%;
+    z-index: 100;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+  }
+}

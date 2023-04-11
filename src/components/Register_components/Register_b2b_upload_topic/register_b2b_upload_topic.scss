@@ -1,0 +1,204 @@
+$green: #56c36f;
+$gray: #d3d3d3;
+.gray {
+  color: #d3d3d3;
+}
+.green {
+  color: $green;
+}
+@mixin circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+@mixin line {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+.m {
+  margin: 11px;
+}
+.Register_b2b_upload_topic {
+  background-color: white;
+  .Register_b2b_upload_topic_top_section {
+    .Register_b2b_upload_topic_top_section_span_1 {
+      color: $green;
+      font-size: 12px;
+    }
+    .Register_b2b_upload_topic_top_section_span_2 {
+      color: $gray;
+      font-size: 12px;
+    }
+  }
+  .Register_b2b_upload_topic_topic {
+    .Register_b2b_upload_topic_topic_steps {
+      padding: 30px 0px;
+      .Register_b2b_upload_topic_topic__business {
+        position: relative;
+
+        left: 52px;
+        &:after {
+          @include line;
+          background: $green;
+          margin-left: -52px;
+        }
+        .Register_b2b_upload_topic_topic__business_circle {
+          @include circle;
+          padding: 1px 9px;
+          border: 3px solid $green;
+          color: $green;
+        }
+      }
+      .Register_b2b_upload_topic_topic_categery {
+        position: relative;
+        &:after {
+          @include line;
+          background: $green;
+          margin-left: -52px;
+        }
+        .Register_b2b_upload_topic_topic_categery_circle {
+          @include circle;
+          color: $green;
+          border: 3px solid $green;
+          padding: 1px 7px;
+        }
+      }
+      .Register_b2b_upload_topic_topic_adddocument {
+        position: relative;
+        right: 47px;
+        .Register_b2b_upload_topic_topic_addbocument_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+        }
+      }
+    }
+  }
+  .head {
+    color: $green;
+  }
+  .top_favorite_categories {
+    margin-bottom: 85px;
+    .top_categories_container {
+      max-width: 700px;
+      .categories__item__check {
+        position: relative;
+        right: -15px;
+        top: 9px;
+      }
+      .categories__item__check__box {
+        position: absolute;
+        left: 9px;
+        top: 9px;
+      }
+      .top_categories_item_img {
+        border-radius: 20px;
+        width: 125px;
+        height: 100px;
+      }
+      .text {
+        padding-left: 10px;
+        text-align: initial;
+      }
+
+      .top_categories_name {
+        position: absolute;
+        bottom: 4px;
+        left: 33px;
+        color: white;
+        font-size: 10px;
+        font-weight: 900;
+      }
+    }
+  }
+  .uploade_drag {
+    border-radius: 35px;
+    padding: 15px;
+    background: #f4f6e9;
+    border-radius: 35px;
+    width: 100%;
+    .topic_file-drop-area {
+      padding: 10px 15px;
+      text-align: center;
+      border-radius: 20px;
+      background: #56c36f;
+      border: 2px #56c36f;
+      align-items: center;
+    }
+  }
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    .jagota_footer-link {
+      padding: 40px;
+      color: gray;
+    }
+    .footer_button {
+      background-color: $green;
+      color: white;
+      padding: 25px 50px;
+      border-radius: 0px;
+
+      .bg-green {
+        background-color: #3caa67 !important;
+      }
+      .bg-gray {
+        background-color: #d3d3d3;
+      }
+      .footer_button_icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .Register_b2b_upload_topic {
+    .Register_b2b_upload_topic_topic {
+      .Register_b2b_upload_topic_topic_steps {
+        .Register_b2b_upload_topic_topic__business {
+          left: 29px;
+          &:after {
+            width: 83px;
+            margin-left: -29px;
+          }
+
+          .Register_b2b_upload_topic_topic__business_para {
+            font-size: 12px;
+          }
+        }
+        .Register_b2b_upload_topic_topic_categery {
+          &:after {
+            width: 83px;
+
+            margin-left: -29px;
+          }
+
+          .Register_b2b_upload_topic_topic__category_para {
+            font-size: 12px;
+          }
+        }
+        .Register_b2b_upload_topic_topic_adddocument {
+          right: 27px;
+
+          .Register_b2b_upload_topic_topic__adddocument_para {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .top_favorite_categories {
+      .top_categories_item_img {
+        width: 110px !important;
+        height: 110px;
+      }
+    }
+  }
+}

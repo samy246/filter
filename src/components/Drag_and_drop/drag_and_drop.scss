@@ -1,0 +1,28 @@
+$seafoam: #37bfa7;
+.Drag_and_drop {
+  width: fit-content;
+  .Drag_and_drop_lable {
+    color: $seafoam;
+  }
+  .Drag_and_drop_file-drop-area {
+    align-items: center;
+    padding: 10px 169px;
+    background: #9dcc5926 0% 0% no-repeat padding-box;
+    border: 2px dashed $seafoam;
+    border-radius: 20px;
+    opacity: 1;
+  }
+  .file-drop-area {
+    display: flex;
+    align-items: center;
+  }
+  .file-drop-area_text {
+    padding-left: 10px;
+  }
+
+  .file-drop-area_btn {
+    color: white !important;
+    background: $seafoam 0% 0% no-repeat padding-box !important;
+    border-radius: 12px !important;
+  }
+}

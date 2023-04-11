@@ -1,0 +1,131 @@
+.Register_b2b_upload_document_success {
+  background-color: white;
+  min-height: 100vh;
+  .Register_b2b_upload_document_success_top_section {
+    .Register_b2b_upload_document_success_top_section_span_1 {
+      color: #56c36f;
+    }
+    .Register_b2b_upload_document_success_top_section_span_2 {
+      color: #d3d3d3;
+    }
+  }
+  .Register_b2b_upload_document_success_uploade_div {
+    margin-bottom: 80px;
+    .Register_b2b_upload_document_success_uploade_feelds {
+      background: #f4f6e9 0% 0% no-repeat padding-box;
+      border-radius: 50px;
+      padding: 30px;
+      width: 60%;
+      margin: auto;
+      .Register_b2b_upload_document_success_uploade_drag_top {
+        p {
+          color: #56c36f;
+          font-weight: 600;
+        }
+      }
+      .Register_b2b_upload_document_success_uploade_drag {
+        padding: 8px;
+        border-radius: 35px;
+        .Register_b2b_upload_document_success_topic_file-drop-area {
+          justify-content: space-between;
+          padding: 10px 15px;
+          text-align: center;
+          border-radius: 20px;
+          background: #56c36f;
+          border: 2px #56c36f;
+          align-items: center;
+        }
+        .Register_b2b_upload_document_success_topic_file-drop-area_text {
+          padding-left: 10px;
+          text-align: initial;
+        }
+      }
+    }
+  }
+  .jagota_footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    .jagota_footer-link {
+      padding: 40px;
+      color: gray;
+    }
+    .footer_button {
+      background-color: #56c36f;
+      color: white;
+      padding: 25px 50px;
+      border-radius: 0px;
+
+      .bg-green {
+        background-color: #3caa67 !important;
+      }
+      .bg-gray {
+        background-color: #d3d3d3;
+      }
+      .footer_button_icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+.padding_top_50 {
+  padding-top: 50px;
+}
+.color_g {
+  color: #56c36f;
+}
+
+@media (max-width: 1024px) {
+  .Register_b2b_upload_document_success {
+    .Register_b2b_upload_document_success_uploade_div {
+      padding-top: 10px;
+      .Register_b2b_upload_document_success_uploade_feelds {
+        width: 80%;
+
+        .Register_b2b_upload_document_success_uploade_drag_top {
+          p {
+            color: #56c36f;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Register_b2b_upload_document_success {
+    .Register_b2b_upload_document_success_uploade_div {
+      padding-top: 10px;
+
+      .Register_b2b_upload_document_success_uploade_feelds {
+        width: 90%;
+
+        .Register_b2b_upload_document_success_uploade_drag_top {
+          p {
+            color: #56c36f;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 475px) {
+  .Register_b2b_upload_document_success {
+    .Register_b2b_upload_document_success_uploade_div {
+      padding-top: 10px;
+
+      .Register_b2b_upload_document_success_uploade_feelds {
+        width: 100%;
+
+        .Register_b2b_upload_document_success_uploade_drag_top {
+          p {
+            color: #56c36f;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

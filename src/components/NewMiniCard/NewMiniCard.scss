@@ -1,0 +1,232 @@
+$seafoam: #37bfa7;
+.newminicard {
+  max-height: 46px;
+}
+.newminicard,
+.notavail {
+  background-color: white;
+  max-width: 100%;
+  //   width: 100%;
+  padding: 10px;
+  margin: 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .minicard__ToastContainer {
+    z-index: 101;
+  }
+  .Toastify__toast-container--top-right {
+    top: 0em;
+    right: 0em;
+    width: auto;
+  }
+
+  .alertmodal {
+    width: 30%;
+    height: 40%;
+  }
+  .login__alertmodal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .modal__login {
+      background: $seafoam;
+      border: 1px solid $seafoam;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 18px 70px;
+    }
+    .modal__icon {
+      margin-bottom: 30px;
+      font-size: 45px;
+    }
+  }
+  .minicard_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+
+    .minicard__quantity {
+      display: flex;
+      align-items: center;
+      input {
+        max-width: 4em;
+        border: none;
+        outline: none;
+        text-align: center;
+        background-color: white;
+      }
+
+      button {
+        padding: 0.5em;
+      }
+
+      button.miniCard__subtract {
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        position: relative;
+        border: none;
+        background-position: center;
+        transition: background 0.8s !important;
+        box-shadow: 0px 3px 6px #2754aa26;
+        border: 1px solid #e4e4e4;
+        background-color: white;
+
+        &::before {
+          content: "";
+          position: absolute;
+          border-top: 3px solid $seafoam;
+          width: 16px;
+          bottom: 13px;
+          right: 6px;
+        }
+        &:active {
+          background-color: $seafoam;
+          background-size: 100%;
+          transition: background 4s;
+
+          &::before {
+            border-top: 2px solid white;
+          }
+        }
+      }
+
+      button.miniCard__add {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        position: relative;
+        background-position: center;
+        transition: background 0.8s !important;
+        box-shadow: 0px 3px 6px #2754aa26;
+        border: 1px solid #e4e4e4;
+        background-color: white;
+
+        &::before {
+          content: "";
+          position: absolute;
+          border-top: 3px solid $seafoam;
+          width: 16px;
+          height: 10px;
+          left: 6.5px;
+          top: 13px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          border-right: 3px solid $seafoam;
+          width: 10px;
+          height: 16px;
+          bottom: 6px;
+          right: 12px;
+        }
+        &:active {
+          background-color: white;
+          background-size: 100%;
+          transition: background 4s;
+
+          &::before {
+            border-top: 2px solid $seafoam;
+          }
+
+          &::after {
+            border-right: 2px solid $seafoam;
+          }
+        }
+      }
+    }
+
+    .minicard__units {
+      display: flex;
+
+      p {
+        background-color: #f3f3f3;
+        padding: 3px 1em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        font-size: 10px;
+        margin: 0;
+
+        &:first-child {
+          border-top-left-radius: 7px;
+          border-bottom-left-radius: 7px;
+        }
+        &:last-child {
+          border-top-right-radius: 7px;
+          border-bottom-right-radius: 7px;
+        }
+      }
+
+      .minicard__unitSelected {
+        background-color: $seafoam;
+        color: white;
+      }
+    }
+  }
+
+  .minicard__addtocart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+    svg {
+      color: $seafoam;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      color: $seafoam;
+      background-color: white;
+      width: 100%;
+      border-radius: 8px;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      background-position: center;
+      transition: background 0.8s !important;
+      &:active {
+        background-color: white;
+        background-size: 100%;
+        transition: background 4s;
+        color: $seafoam;
+        border: 1px solid $seafoam;
+
+        &::before {
+          color: $seafoam;
+        }
+      }
+    }
+  }
+}
+
+.notavail {
+  color: gray !important;
+  cursor: not-allowed;
+  background-color: #e4e4e4;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .minicard .minicard_container {
+    gap: 4px;
+  }
+}

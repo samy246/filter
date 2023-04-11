@@ -1,0 +1,14 @@
+[
+    {
+        "selectType": [
+            { "key": "All Type", "value": "All Type" },
+            { "key": "Grass-Fed", "value": "Grass-Fed" }
+        ]
+    },
+    {
+        "countryOfOrigin": [
+            { "key": "United States", "value": "United States" },
+            { "key": "Span", "value": "Span" }
+        ]
+    }
+]

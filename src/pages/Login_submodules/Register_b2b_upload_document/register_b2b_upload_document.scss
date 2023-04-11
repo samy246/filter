@@ -1,0 +1,88 @@
+$green: #37bfa7;
+$gray: #d3d3d3;
+@mixin circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 1px 7px;
+  text-align: center;
+}
+@mixin line {
+  content: "";
+  display: block;
+  width: 156px;
+  height: 3px;
+  position: relative;
+  top: 10px;
+}
+
+.Register_b2b_upload_document {
+  .Register_b2b_upload_document_section {
+    .Register_b2b_upload_document_section_span_1 {
+      color: $green;
+      font-size: 12px;
+    }
+    .Register_b2b_upload_document_section_span_2 {
+      color: $gray;
+      font-size: 12px;
+    }
+  }
+  .Register_b2b_upload_document {
+    .Register_b2b_upload_document_steps {
+      padding: 30px 0px;
+      .Register_b2b_upload_document__business {
+        position: relative;
+        left: 40px;
+
+        &:after {
+          @include line;
+          background: $green;
+          margin-left: -40px;
+        }
+
+        .Register_b2b_upload_document__business_circle {
+          @include circle;
+          border: 3px solid $green;
+          color: $green;
+        }
+      }
+      .Register_b2b_upload_document_categery {
+        position: relative;
+
+        &:after {
+          @include line;
+          background: $green;
+          margin-left: -40px;
+        }
+
+        .Register_b2b_upload_document_categery_circle {
+          @include circle;
+          color: $green;
+          border: 3px solid $green;
+          padding: 1px 7px;
+        }
+      }
+      .Register_b2b_upload_document_adddocument {
+        position: relative;
+        right: 35px;
+
+        .Register_b2b_upload_document_addbocument_circle {
+          @include circle;
+          border: 3px solid $gray;
+          padding: 1px 7px;
+        }
+      }
+    }
+  }
+  .Register_b2b_upload_documents_heading {
+    color: $green;
+  }
+  .Register_b2b_upload_documents {
+    margin: auto;
+    padding: 30px 40px;
+    width: fit-content;
+    background: #f4f6e9 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    opacity: 1;
+  }
+}
