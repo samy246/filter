@@ -1,5 +1,5 @@
 import React, { useEffect,useState } from "react";
-import './AccordionCom.scss'
+// import './AccordionCom.scss'
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 
@@ -103,6 +103,8 @@ console.log("Accord data",data);
                     //checked={itm?.id === "1064"}
                     //checked={itm?.id == idparams.id}
                    // checked={itm?.id == idparams.id}
+                   //checked={true}
+                    checked={itm?.id == idparams.id}
                     value={itm?.product_type_code ? itm?.product_type_code : itm?.short_code ? itm?.short_code : itm?.country_id ? itm?.country_id : itm?.id}
                     id={itm?.product_type_code ? itm?.product_type_code : itm?.short_code ? itm?.short_code : itm?.country_id ? itm?.country_id : itm?.id}
                     onClick={() => handler(itm?.product_type_code ? itm?.product_type_code : itm?.short_code ? itm?.short_code : itm?.country_id ? itm?.country_id : itm?.id)}
@@ -158,6 +160,8 @@ console.log("Accord data",data);
                     //checked={itm?.id === a.id}
                     //checked={ idparams.subCat === item.id  }
                    // checked={ item?.id == idparams.subCat}
+                  checked={item?.id == idparams.subCat}
+                // checked={true}
                     value={item?.product_type_code ? item?.product_type_code : item?.short_code ? item?.short_code : item?.country_id ? item?.country_id : item?.id}
                     id={item?.product_type_code ? item?.product_type_code : item?.short_code ? item?.short_code : item?.country_id ? item?.country_id : item?.id}
                     onClick={() => handler(item?.product_type_code ? item?.product_type_code : item?.short_code ? item?.short_code : item?.country_id ? item?.country_id : item?.id)}
